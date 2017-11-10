@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Greenometry Theme functions and definitions
+ * functions.php
+ * 
+ * Greenometry Theme Functions and Definitions
  * 
  * @author: Sean Gilliland, Melissa Wong, Analia Arredondo, Ronald Hamasaki
  * @version 1.0
@@ -24,6 +26,10 @@ add_action( 'init', 'add_taxonomies_to_pages');
  function greenometry_scripts_and_styles() {
 	 wp_enqueue_style( 'greenometry_style', get_stylesheet_uri() );
  }
+
+ /**
+  * 
+  **/
 
 /**
  * Add Question/Answer custom post type 
@@ -56,4 +62,5 @@ function qa_title_placeholder( $title ) {
 	}
 	return $title;
 }
+
 add_filter( 'enter_title_here', 'qa_title_placeholder' );

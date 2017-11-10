@@ -1,2 +1,4 @@
 greenometry_dev/*
 .htaccess
+.ds_store
+.DS_Store
