@@ -59,7 +59,7 @@ function custom_post_types() {
 			'public'		=> true,
 			'taxonomies'	=> array('category', 'post_tag'),
 			'supports'		=> array('title', 'editor', 'thumbnail', 'custom-fields'),
-			'has_archive'	=> true.
+			'has_archive'	=> true,
 			'menu_position'	=> 20
 
 		)
