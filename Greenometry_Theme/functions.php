@@ -35,7 +35,7 @@ add_action( 'init', 'add_taxonomies_to_pages');
  * Add Question/Answer custom post type 
  **/
 function custom_post_types() {
-	register_post_type( 'qa', 
+	register_post_type( 'question_answer', 
 		array(
 			'labels' 		=> array(
 				'name' 				=> __('Q&A\'s'),
@@ -44,8 +44,23 @@ function custom_post_types() {
 			),
 			'public' 		=> true,
 			'taxonomies' 	=> array('category', 'post_tag'),
-			'supports'		=> array( 'title', 'thumbnail', 'custom-fields' )
+			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
+			'has-archive'	=> true
 		) 
+	);
+	register_post_type('videos', 
+		array(
+			'labels'		=> array(
+				'name'				=> __('Videos'),
+				'singular_name'		=> __('Video'),
+				'add_new_item'		=> __('Add New Video')
+			),
+			'public'		=> true,
+			'taxonomies'	=> array('category', 'post_tag'),
+			'supports'		=> array('title', 'editor', 'thumbnail', 'custom-fields'),
+			'has-archive'	=> true
+
+		)
 	);
 }
 
