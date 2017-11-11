@@ -45,7 +45,8 @@ function custom_post_types() {
 			'public' 		=> true,
 			'taxonomies' 	=> array('category', 'post_tag'),
 			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
-			'has-archive'	=> true
+			'has_archive'	=> true,
+			'menu_position'	=> 20
 		) 
 	);
 	register_post_type('videos', 
@@ -58,7 +59,8 @@ function custom_post_types() {
 			'public'		=> true,
 			'taxonomies'	=> array('category', 'post_tag'),
 			'supports'		=> array('title', 'editor', 'thumbnail', 'custom-fields'),
-			'has-archive'	=> true
+			'has_archive'	=> true.
+			'menu_position'	=> 20
 
 		)
 	);
