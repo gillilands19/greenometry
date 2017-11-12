@@ -51,9 +51,9 @@ function greenometry_theme_supports() {
 	add_theme_support( 'title-tag' );
 
 	add_theme_support( 'custom-logo', array(
-		//add height
-		//add width
-		//add flex options
+		'height'		=> 100,		//TODO add height
+		'width'			=> 400,		//TODO add width
+		'flex-width'	=> true 	//TODO add flex options
 		) 
 	);
 }
