@@ -15,6 +15,7 @@
  **/
 ?>
 
+<?php get_header(); ?>
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -54,3 +55,5 @@
 			<p>You have the questions and we have the data! send us your questions and we will provide the answers</p>
 			<?php //TODO add Ask Greenometry template part or query ask greenometry page content or add c7 shortcode ?>
 		</section>
+
+<?php get_footer(); ?>

@@ -6,22 +6,30 @@
  * @version 1.0 
  * 
  * 
- * TODO:
+ * TODO: custom loop query for recent qa. this loop will be nested
+ * create team page and support page parts. Use Custom Post Type for team members then nested loop
  * 
  **/
 
 get_header();
 
+if (have_posts()) : while (have_posts()) : the_post();
+
 get_template_part( '/template-parts/page/content', 'page' );
 
 if ( is_page('About Us') ){
-	get_template_part('/template-parts/page/team', 'page' );
-	get_template_part('/template-parts/page/support', 'page');
-} else if ( is_page('Ask Greenometry') ) {
-	get_template_part('/template-parts/page/recent', 'qa');
-} else {
-	echo '<div></div>'; //Add some sort of divider
+		
+		get_template_part('/template-parts/page/team', 'page' );
+
+		get_template_part('/template-parts/page/support', 'page');
+
 }
+
+if ( is_page('Ask Greenometry') ) {
+	get_template_part('/template-parts/page/recent', 'qa');
+}
+
+endwhile; endif;
 
 get_footer();
 

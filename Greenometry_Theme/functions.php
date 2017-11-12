@@ -114,6 +114,21 @@ function custom_post_types() {
 
 		)
 	);
+	register_post_type('team_members', 
+	array(
+		'labels'		=> array(
+			'name'				=> __('Our Team'),
+			'singular_name'		=> __('Team Member'),
+			'add_new_item'		=> __('Add New Team Member')
+		),
+		'public'		=> true,
+		'taxonomies'	=> array('category', 'post_tag'),
+		'supports'		=> array('title', 'thumbnail', 'custom-fields'),
+		'has_archive'	=> true,
+		'menu_position'	=> 20
+
+	)
+);
 }
 
 add_action( 'init', 'custom_post_types' );
