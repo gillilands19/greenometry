@@ -32,7 +32,7 @@
 
 		<section>
 			<h2>Latest Posts</h2>
-			<?php recent_posts_home();
+			<?php //recent_posts_home();
 			
 			/*<?php
 			$latest_posts_home = new WP_Query( array( 'posts_per_page' => 3 ) );
