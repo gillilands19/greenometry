@@ -13,12 +13,13 @@
  **/
 ?>
 
+<!DOCTYPE html>
 
-<!DOCTYPE>
 <html>
 	<head>
+		<title>Sample</title>
 		<?php wp_head(); ?>
-	</head>
+	</head>	
 	<body>
 		<header>
 			<figure>
@@ -27,7 +28,6 @@
 			<?php wp_nav_menu( array(
 				'theme_location' 		=> 'main-menu',
 				'container'				=> 'nav',
-				'container_class'		=> '',
 				'items_wrap'			=> '<ul class="%2$s">%3$s</ul>', //TODO add classes to ul
 				)
 			); 
