@@ -157,6 +157,20 @@ function team_title_placeholder( $title ) {
 
 add_filter( 'enter_title_here', 'team_title_placeholder' );
 
+
+function recent_posts_home() {
+	$latest_posts_home = new WP_Query( array( 'posts_per_page' => 3 ) );
+	if ( $latest_posts_home->have_posts() ) : while ( $latest_posts_home->have_posts() ) : $latest_posts_home->the_post();
+		$recent_posts_loop  = '<div><figure>';
+		$recent_posts_loop .= the_post_thumbnail();
+		$recent_posts_loop .= '</figure><h3>' . the_title() . '</h3>';
+		$recent_posts_loop .= '<p>' . the_excerpt() . '</p>';
+		$recent_posts_loop .= '<a href="' . get_permalink() . '" >';
+		$recent_posts_loop .= '<button>Read More</button></a></div>';
+		echo $recent_posts_loop;
+	endwhile; endif;
+}
+
 /**
  * TODO: 
  * functions for loops that query post types for abstraction

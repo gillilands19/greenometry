@@ -32,7 +32,9 @@
 
 		<section>
 			<h2>Latest Posts</h2>
-			<?php
+			<?php recent_posts_home();
+			
+			/*<?php
 			$latest_posts_home = new WP_Query( array( 'posts_per_page' => 3 ) );
 			if ( $latest_posts_home->have_posts() ) : while ( $latest_posts_home->have_posts() ) : $latest_posts_home->the_post();
 			?>
@@ -47,7 +49,7 @@
 					<button>Read More</button>
 				</a>
 			</div>
-			<?php endwhile; endif; ?>
+			<?php endwhile; endif; ?> */ ?>
 		</section>
 
 		<section>
