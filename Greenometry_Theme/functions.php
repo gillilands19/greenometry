@@ -18,10 +18,10 @@ function add_meta_title_tags() {
 	 $grCharSet = get_bloginfo( 'charset' );
 	 $grDescription = get_bloginfo( 'description' );
 	 $grSiteTitle = get_bloginfo( 'name' );
-	 echo '<meta charset="' . $grCharSet . '" />';
-	 echo '<meta name="description" content="' . $grDescription . '" />';
-	 echo '<meta name="robots" content="noindex,nofollow" />';
-	 echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+	 echo '<meta charset="' . $grCharSet . '" />\n';
+	 echo '<meta name="description" content="' . $grDescription . '" />\n';
+	 echo '<meta name="robots" content="noindex,nofollow" />\n';
+	 echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n';
 	 //echo '<title>' . $grSiteTitle . '</title>';
 }
 add_action('wp_head', 'add_meta_title_tags');

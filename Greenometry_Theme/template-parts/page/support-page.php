@@ -1,14 +1,14 @@
 <?php  
 /**
- *Team-Page Template Part - Greenometry Theme
+ * Support-Page Template Part - Greenometry Theme
  * 
  * @author Sean Gilliland, Melissa Wong, Analia Arredondo, Ronald Hamasaki
  * @version 1.0 
  * 
  * 
- * TODO: Add classes to elements 
- * add team_members as custom post-type
- * put loop/query in function for abstraction
+ * TODO: add icon fields to about page
+ * add classes to elements
+ * 
  * 
  **/
 ?>		

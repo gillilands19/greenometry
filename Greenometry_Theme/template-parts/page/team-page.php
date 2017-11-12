@@ -14,13 +14,14 @@
 ?>		
 		
 		<section>
-			<?php 
-			$greenometry_team_labels = get_post_type_object( 'team_members' );
+			<h1><?php
+			$greenometry_team_labels = get_post_type_object( 'team_members' ); 
+			echo $greenometry_team_labels->labels->name ?>
+			</h1>
+			<?php
 			$greenometry_team = new WP_Query( array( 'post_type' => 'team_members' ) );
 			if ( $greenometry_team->have_posts() ) : while ( $greenometry_team->have_posts() ) : $greenometry_team->the_post();
 			?>
-
-			<h1><?php echo $greenometry_team_labels->labels->name ?></h1>
 			<div>
 				<figure>
 					<?php the_post_thumbnail(); ?>
