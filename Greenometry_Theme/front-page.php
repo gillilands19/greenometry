@@ -10,6 +10,7 @@
  * Add subscribe heading to custom fields
  * Create Subscribe contact form 7
  * Add template part or query ask greenometry content
+ * Put recent posts loop into function for abstraction
  * 
  **/
 ?>
