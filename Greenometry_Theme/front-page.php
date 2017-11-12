@@ -9,6 +9,7 @@
  * TODO: Add classes to elements
  * Add subscribe heading to custom fields
  * Create Subscribe contact form 7
+ * Add template part or query ask greenometry content
  * 
  **/
 ?>
@@ -35,19 +36,20 @@
 			?>
 
 			<div>
+				<figure>
+					<?php the_post_thumbnail(); ?>
+				</figure>
+				<h3><?php the_title(); ?></h3>
+				<p><?php the_excerpt(); ?></p>
 				<a href="<?php echo get_permalink(); ?>">
-					<figure>
-						<?php the_post_thumbnail(); ?>
-					</figure>
-					<h3><?php the_title(); ?></h3>
-					<p><?php the_excerpt(); ?></p>
-					<a href="<?php echo get_permalink(); ?>">
-						<button>Read More</button>
-					</a>
-
+					<button>Read More</button>
 				</a>
 			</div>
-
 			<?php endwhile; endif; ?>
+		</section>
 
+		<section>
+			<h2>Ask Greenometry</h2>
+			<p>You have the questions and we have the data! send us your questions and we will provide the answers</p>
+			<?php //TODO add Ask Greenometry template part or query ask greenometry page content or add c7 shortcode ?>
 		</section>
