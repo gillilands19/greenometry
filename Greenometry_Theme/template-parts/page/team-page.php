@@ -25,9 +25,11 @@
 				<figure>
 					<?php the_post_thumbnail(); ?>
 				</figure>
-				<strong><?php the_field( 'name' );  ?></strong>
-				<p><?php the_field( 'title' ); ?></p>
-				<p><?php the_field( 'title_two' ); ?></p>
+				<strong><?php the_title(); ?></strong>
+				<p>
+					<?php the_field( 'title' ); ?><br>
+					<?php the_field( 'title_two' ); ?>
+				</p>
 			</div>
 
 			<?php endwhile; endif; ?>

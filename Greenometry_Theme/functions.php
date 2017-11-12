@@ -139,13 +139,23 @@ add_action( 'init', 'custom_post_types' );
  **/
 function qa_title_placeholder( $title ) {
 	$screen = get_current_screen();
-	if ('qa' == $screen->post_type ) {
+	if ('question_answer' == $screen->post_type ) {
 		$title = 'Enter Question Here';
 	}
 	return $title;
 }
 
 add_filter( 'enter_title_here', 'qa_title_placeholder' );
+
+function team_title_placeholder( $title ) {
+	$screen = get_current_screen();
+	if ('team_members' == $screen->post_type ) {
+		$title = 'Enter Name Here';
+	}
+	return $title;
+}
+
+add_filter( 'enter_title_here', 'team_title_placeholder' );
 
 /**
  * TODO: 
