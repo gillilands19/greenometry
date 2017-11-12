@@ -19,7 +19,7 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<section>
-			<h1><?php  the_field( 'tagline' )  ?></h1>
+			<h1><?php  the_field( 'tagline' );  ?></h1>
 			<button>Learn More</button>
 		</section>
 		<section>
