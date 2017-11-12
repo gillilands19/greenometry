@@ -96,7 +96,8 @@ function custom_post_types() {
 			'taxonomies' 	=> array('category', 'post_tag'),
 			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
-			'menu_position'	=> 20
+			'menu_position'	=> 20,
+			'description'	=> 'Helping understand and estimate your carbon footprint. Answers provided by Greenometry'
 		) 
 	);
 	register_post_type('videos', 
@@ -110,7 +111,8 @@ function custom_post_types() {
 			'taxonomies'	=> array('category', 'post_tag'),
 			'supports'		=> array('title', 'editor', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
-			'menu_position'	=> 20
+			'menu_position'	=> 20,
+			'menu_icon'		=> 'dashicons-video-alt'
 
 		)
 	);
