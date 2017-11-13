@@ -20,7 +20,7 @@
 			<h1>
 				<?php 
 				$greenometry_qa_labels = get_post_type_object( 'question_answer' );
-				echo 'Recent' . $greenometry_qa_labels->labels->name;
+				echo 'Recent ' . $greenometry_qa_labels->labels->name;
 				?>
 			</h1>
 			<h4><?php echo $greenometry_qa_labels->description ?></h4>
@@ -28,7 +28,7 @@
 		<?php
 		//arguments list for Q&A query
 		$recent_qa_posts_args = array( 
-			'post_type'			=> 'question_answers',
+			'post_type'			=> 'question_answer',
 			'posts_per_page'	=> 5,
 		);
 		$recent_qa_posts_args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
