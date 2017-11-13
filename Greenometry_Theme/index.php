@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Template - Greenometry Theme
+* Index Template - Greenometry Theme
  * 
  * @author Sean Gilliland, Melissa Wong, Analia Arredondo, Ronald Hamasaki
  * @version 1.0 
