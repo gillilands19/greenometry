@@ -6,8 +6,8 @@
  * @version 1.0 
  * 
  * 
- * TODO: Add filter function to the content. get_the_content will need to be used. Split content in half by p tag and add custom field for quote 
- * add classes to elements
+ * TODO: add classes to elements
+ * make heading and subtitle dynamic
  **/
 
  get_header();
