@@ -16,6 +16,14 @@ get_header();
 		<section>
 			<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
+			<?php 
+			
+			echo get_site_url();
+			echo get_post_type();
+			echo get_the_category();
+			
+			?>
+
 			<h1><?php the_title(); ?></h1>
 			<div>
 				<small><?php the_time( 'F j, Y' ); echo ' | '; the_category( ', ' ); echo ' | '; ?></small>
