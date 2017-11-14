@@ -93,7 +93,7 @@ function custom_post_types() {
 				'add_new_item'		=> __('Add New Q&A')
 			),
 			'public' 		=> true,
-			'taxonomies' 	=> array('category', 'post_tag'),
+			'taxonomies' 	=> array('category', 'post_tag', 'question_answer_categories'),
 			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
 			'menu_position'	=> 20,
@@ -138,6 +138,34 @@ function custom_post_types() {
 
 add_action( 'init', 'custom_post_types' );
 
+function question_answer_taxonomies() {
+
+	$labels = array(
+		'name'				=> __('Q&A Categories'),
+		'singular_name'		=> __('Q&A Category'),
+		'search_items'		=> __('Search Q&A Categories'),
+		'all_items'			=> __('All Q&A Categories'),
+		'parent_item'		=> __('Parent Q&A Category'),
+		'parent_item_colon'	=> __('Parent Q&A Category:'),
+		'edit_item'			=> __('Edit Q&A Category'),
+		'update_item'		=> __('Update Q&A Category'),
+		'add_new_item'		=> __('Add New Q&A Category'),
+		'new_item_name'		=> __('New Q&A Category Name'),
+		'menu_name'			=> __('Q&A Category')
+	);
+
+	$args = array(
+		'hierarchical'		=> true,
+		'labels'			=> $labels,
+		'show_ui'			=> true,
+		'show_admin_column'	=> true,
+		'query_var'			=> true,
+		'rewrite'			=> array( 'slug' => 'Q&A Category' )
+	);
+
+	register_taxonomy( 'question_answer_categories', array( 'question_answer' ), $args );
+}
+
 
 /**
  * Change the placeholder in the title field of QA editor to Question 
@@ -175,6 +203,16 @@ function recent_posts_home() {
 		echo $recent_posts_loop;
 	endwhile; endif;
 }
+
+function show_custom_post_types_archive( $query ) {
+	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+	$query->set( 'post_type', array(
+	'post', 'nav_menu_item', 'question_answer', 'videos'
+	));
+	return $query;
+	}
+   }
+   add_filter( 'pre_get_posts', 'show_custom_post_types_archive' );
 
 /**
  * TODO: 

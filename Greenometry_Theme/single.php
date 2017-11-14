@@ -18,9 +18,17 @@ get_header();
 
 			<?php 
 			
-			echo get_site_url();
-			echo get_post_type();
-			echo get_the_category();
+			// echo get_site_url() . '<br>';
+			// echo get_post_type() . '<br>';
+			// $category_list = get_the_category();
+			// var_dump($category_list);
+			// echo $category_list[0]->name;
+
+
+			// add_filter( 'term_link', function ($termlink) {
+			// 	$category_list = get_the_category();
+			// 	$termlink = get_site_url() . '/' . get_post_type() . '/' . $category_list[0]->slug;
+			// }, 10, 1 );
 			
 			?>
 
