@@ -59,3 +59,6 @@ get_header();
 		<?php //publications loop goes here ?>
 		</section>
 
+
+<?php get_footer(); ?>
+

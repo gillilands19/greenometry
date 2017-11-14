@@ -97,7 +97,8 @@ function custom_post_types() {
 			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
 			'menu_position'	=> 20,
-			'description'	=> 'Helping understand and estimate your carbon footprint. Answers provided by Greenometry'
+			'description'	=> 'Helping understand and estimate your carbon footprint. Answers provided by Greenometry',
+			'menu_icon'		=> 'dashicons-editor-help'
 		) 
 	);
 	register_post_type('videos', 

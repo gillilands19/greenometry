@@ -24,7 +24,7 @@ get_header();
 
 			<article>
 				<?php $content = get_the_content();
-					echo $content;
+					the_content();
 				?>
 			</article>
 
