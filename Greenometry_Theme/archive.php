@@ -12,21 +12,6 @@
 get_header();
 ?>
 
-<?php
-/**
-* Index Template - Greenometry Theme
- * 
- * @author Sean Gilliland, Melissa Wong, Analia Arredondo, Ronald Hamasaki
- * @version 1.0 
- * 
- * 
- * TODO: add classes to elements
- * make heading and subtitle dynamic
- **/
-
- get_header();
- ?>
-
 		<section>
 		archive.php
 		<?php $queried_object = get_queried_object(); ?>
