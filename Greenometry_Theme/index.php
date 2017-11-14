@@ -8,11 +8,12 @@
  * 
  * TODO: add classes to elements
  * make heading and subtitle dynamic
+ * limit posts per page
  **/
 
  get_header();
  ?>
-
+		index.php
 		<section>
 			<h1>Recent Articles &amp Posts</h1>
 			<small>Subtitle</small>
@@ -37,3 +38,5 @@
 
 
 		</section>
+
+		<?php get_footer(); ?>

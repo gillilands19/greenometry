@@ -10,11 +10,12 @@
  * Register Post Type publications
  * publications post type loop
  * add classes to elements
+ * add link to videos archive page
  **/
 
 get_header();
 ?>
-
+		page-resources.php
 		<section>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

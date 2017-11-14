@@ -12,7 +12,7 @@
  * 
  **/
 ?>		
-		
+		team-page.php
 		<section>
 			<h1><?php
 			$greenometry_team_labels = get_post_type_object( 'team_members' ); 

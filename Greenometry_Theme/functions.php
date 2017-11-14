@@ -113,7 +113,8 @@ function custom_post_types() {
 			'supports'		=> array('title', 'editor', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
 			'menu_position'	=> 20,
-			'menu_icon'		=> 'dashicons-video-alt'
+			'menu_icon'		=> 'dashicons-video-alt',
+			'description'	=> 'Relevant Videos and Presentations'
 
 		)
 	);

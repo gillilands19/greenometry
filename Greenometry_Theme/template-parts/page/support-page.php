@@ -12,7 +12,7 @@
  * 
  **/
 ?>		
-
+		support-page.php
 		<section>
 		
 			<h1>Support Us</h1>
