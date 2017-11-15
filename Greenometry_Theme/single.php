@@ -27,7 +27,7 @@ get_header();
 			 * This is exploratory for rewriting links when listing the categories, so that the link will redirect to a list of categories
 			 * that only includes one Post type. for example, I only want to see the Question and answers post type that has a category of technology.
 			 * 
-			 * 
+			 *  
 			 * The better option may be enabling a custom taxonomy for the Q&A post type. This way the custom taxonomy will be queried instead of the
 			 * Category Taxonomy which is attached to the Post object.
 			 * **/
