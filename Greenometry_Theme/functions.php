@@ -77,9 +77,39 @@ add_action( 'init', 'add_taxonomies_to_pages');
 	 wp_enqueue_style( 'greenometry_style', get_stylesheet_uri() );
  }
 
- /**
-  * 
-  **/
+/**
+ * Custom Category Taxonomy for the Q&A post-type. This Might be used for querying each Q&A category so it
+ * can be separate from Wordpress' built in category taxonomy 
+**/
+function question_answer_taxonomies() {
+	
+		$labels = array(
+			'name'				=> __('Q&A Categories'),
+			'singular_name'		=> __('Q&A Category'),
+			'search_items'		=> __('Search Q&A Categories'),
+			'all_items'			=> __('All Q&A Categories'),
+			'parent_item'		=> __('Parent Q&A Category'),
+			'parent_item_colon'	=> __('Parent Q&A Category:'),
+			'edit_item'			=> __('Edit Q&A Category'),
+			'update_item'		=> __('Update Q&A Category'),
+			'add_new_item'		=> __('Add New Q&A Category'),
+			'new_item_name'		=> __('New Q&A Category Name'),
+			'menu_name'			=> __('Q&A Category')
+		);
+	
+		$args = array(
+			'hierarchical'		=> true,
+			'labels'			=> $labels,
+			'show_ui'			=> true,
+			'show_admin_column'	=> true,
+			'query_var'			=> true,
+			'rewrite'			=> array( 'slug' => 'qa-category' )
+		);
+	
+		register_taxonomy( 'question_answer_category', array( 'question_answer' ), $args );
+	}
+	
+	add_action( 'init', 'question_answer_taxonomies' );
 
 /**
  * Add Question/Answer custom post type 
@@ -93,7 +123,7 @@ function custom_post_types() {
 				'add_new_item'		=> __('Add New Q&A')
 			),
 			'public' 		=> true,
-			'taxonomies' 	=> array('category', 'post_tag', 'question_answer_categories'),
+			'taxonomies' 	=> array( 'category', 'question_answer_categories', 'post_tag' ),
 			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
 			'menu_position'	=> 20,
@@ -137,35 +167,6 @@ function custom_post_types() {
 }
 
 add_action( 'init', 'custom_post_types' );
-
-function question_answer_taxonomies() {
-
-	$labels = array(
-		'name'				=> __('Q&A Categories'),
-		'singular_name'		=> __('Q&A Category'),
-		'search_items'		=> __('Search Q&A Categories'),
-		'all_items'			=> __('All Q&A Categories'),
-		'parent_item'		=> __('Parent Q&A Category'),
-		'parent_item_colon'	=> __('Parent Q&A Category:'),
-		'edit_item'			=> __('Edit Q&A Category'),
-		'update_item'		=> __('Update Q&A Category'),
-		'add_new_item'		=> __('Add New Q&A Category'),
-		'new_item_name'		=> __('New Q&A Category Name'),
-		'menu_name'			=> __('Q&A Category')
-	);
-
-	$args = array(
-		'hierarchical'		=> true,
-		'labels'			=> $labels,
-		'show_ui'			=> true,
-		'show_admin_column'	=> true,
-		'query_var'			=> true,
-		'rewrite'			=> array( 'slug' => 'Q&A Category' )
-	);
-
-	register_taxonomy( 'question_answer_categories', array( 'question_answer' ), $args );
-}
-
 
 /**
  * Change the placeholder in the title field of QA editor to Question 
