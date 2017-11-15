@@ -78,40 +78,6 @@ add_action( 'init', 'add_taxonomies_to_pages');
  }
 
 /**
- * Custom Category Taxonomy for the Q&A post-type. This Might be used for querying each Q&A category so it
- * can be separate from Wordpress' built in category taxonomy 
-**/
-function question_answer_taxonomies() {
-	
-		$labels = array(
-			'name'				=> __('Q&A Categories'),
-			'singular_name'		=> __('Q&A Category'),
-			'search_items'		=> __('Search Q&A Categories'),
-			'all_items'			=> __('All Q&A Categories'),
-			'parent_item'		=> __('Parent Q&A Category'),
-			'parent_item_colon'	=> __('Parent Q&A Category:'),
-			'edit_item'			=> __('Edit Q&A Category'),
-			'update_item'		=> __('Update Q&A Category'),
-			'add_new_item'		=> __('Add New Q&A Category'),
-			'new_item_name'		=> __('New Q&A Category Name'),
-			'menu_name'			=> __('Q&A Category')
-		);
-	
-		$args = array(
-			'hierarchical'		=> true,
-			'labels'			=> $labels,
-			'show_ui'			=> true,
-			'show_admin_column'	=> true,
-			'query_var'			=> true,
-			'rewrite'			=> array( 'slug' => 'qa-category' )
-		);
-	
-		register_taxonomy( 'question_answer_category', array( 'question_answer' ), $args );
-	}
-	
-	add_action( 'init', 'question_answer_taxonomies' );
-
-/**
  * Add Question/Answer custom post type 
  **/
 function custom_post_types() {
@@ -149,8 +115,8 @@ function custom_post_types() {
 		)
 	);
 	register_post_type('team_members', 
-	array(
-		'labels'		=> array(
+		array(
+			'labels'		=> array(
 			'name'				=> __('Our Team'),
 			'singular_name'		=> __('Team Member'),
 			'add_new_item'		=> __('Add New Team Member')
@@ -162,11 +128,47 @@ function custom_post_types() {
 		'menu_position'	=> 20,
 		'menu_icon'		=> 'dashicons-groups'
 
-	)
-);
+		)
+	);
 }
 
 add_action( 'init', 'custom_post_types' );
+
+
+/**
+ * Custom Category Taxonomy for the Q&A post-type. This Might be used for querying each Q&A category so it
+ * can be separate from Wordpress' built in category taxonomy 
+**/
+function question_answer_taxonomies() {
+	
+		$labels = array(
+			'name'				=> __('Q&A Categories'),
+			'singular_name'		=> __('Q&A Category'),
+			'search_items'		=> __('Search Q&A Categories'),
+			'all_items'			=> __('All Q&A Categories'),
+			'parent_item'		=> __('Parent Q&A Category'),
+			'parent_item_colon'	=> __('Parent Q&A Category:'),
+			'edit_item'			=> __('Edit Q&A Category'),
+			'update_item'		=> __('Update Q&A Category'),
+			'add_new_item'		=> __('Add New Q&A Category'),
+			'new_item_name'		=> __('New Q&A Category Name'),
+			'menu_name'			=> __('Q&A Category')
+		);
+	
+		$args = array(
+			'hierarchical'		=> true,
+			'labels'			=> $labels,
+			'show_ui'			=> true,
+			'show_admin_column'	=> true,
+			'query_var'			=> true,
+			'rewrite'			=> false,
+		);
+	
+		register_taxonomy( 'question_answer_category', 'question_answer', $args );
+	}
+	
+	add_action( 'init', 'question_answer_taxonomies' );
+
 
 /**
  * Change the placeholder in the title field of QA editor to Question 
