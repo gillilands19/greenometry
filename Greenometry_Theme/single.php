@@ -10,7 +10,7 @@
  * add classes to elements
  * add conditional to display question_answer single post.
  * remove var dumps
- * If post type is question_answer return 
+ * If post type is question_answer return proper Q&A categories or create single-question_answer.php template
  * 
  **/
 

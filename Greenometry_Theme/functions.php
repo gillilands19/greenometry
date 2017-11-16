@@ -89,7 +89,7 @@ function custom_post_types() {
 				'add_new_item'		=> __('Add New Q&A')
 			),
 			'public' 		=> true,
-			'taxonomies' 	=> array( 'category', 'question_answer_categories', 'post_tag' ),
+			'taxonomies' 	=> array( 'question_answer_categories' ),
 			'supports'		=> array( 'title', 'thumbnail', 'custom-fields'),
 			'has_archive'	=> true,
 			'menu_position'	=> 20,

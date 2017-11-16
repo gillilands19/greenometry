@@ -11,6 +11,8 @@
  * publications post type loop
  * add classes to elements
  * add link to videos archive page
+ * 
+ * 
  **/
 
 get_header();
