@@ -30,8 +30,8 @@ get_header();
 
 		<?php endwhile; ?>
 
-			<div><?php previous_posts_link( '< Older Posts' ); ?></div>
-			<div><?php next_posts_link( 'Newer Posts >' ); ?></div>
+			<div><?php next_posts_link( '< Older Posts' ); ?></div>
+			<div><?php previous_posts_link( 'Newer Posts >' ); ?></div>
 
 		<?php endif; ?>
 
