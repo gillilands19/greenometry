@@ -17,7 +17,7 @@
 get_header();
 ?>
 		single.php
-		<section>
+		<section class="posts-container">
 			<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
 			<?php 
@@ -57,13 +57,13 @@ get_header();
 
 			?>
 
-			<h1><?php the_title(); ?></h1>
-			<div>
-				<small><?php the_time( 'F j, Y' ); echo ' | '; the_category( ', ' ); echo ' | '; ?></small>
+			<h1 class="posts-container__single-heading"><?php the_title(); ?></h1>
+			<div class="posts-container__single-details-container">
+				<small class="posts-container__single-details"><?php the_time( 'F j, Y' ); echo ' | '; the_category( ', ' ); echo ' | '; ?></small>
 				<?php //add social menu here ?>
 			</div>
 
-			<article>
+			<article class="posts-container__single-content">
 				<?php $content = get_the_content();
 					the_content();
 					if(get_post_type() == 'question_answer') {

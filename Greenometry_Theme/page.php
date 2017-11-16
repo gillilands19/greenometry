@@ -19,7 +19,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 get_template_part( '/template-parts/page/content', 'page' );
 
-if ( is_page('About Us') ){
+if ( is_page('about-us') ){
 		
 		get_template_part('/template-parts/page/team', 'page' );
 
@@ -27,7 +27,7 @@ if ( is_page('About Us') ){
 
 }
 
-if ( is_page('Ask Greenometry') ) {
+if ( is_page('ask-greenometry') ) {
 	get_template_part('/template-parts/page/recent', 'qa');
 }
 

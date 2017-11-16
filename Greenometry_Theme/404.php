@@ -17,9 +17,9 @@
 get_header();
 ?>
 
-		<section>
+		<section class="404-container">
 			<div>
-				<h1>404 Page Not Found</h1>
+				<h1 class="404-container__message">404 Page Not Found</h1>
 			</div>
 		</section>
 

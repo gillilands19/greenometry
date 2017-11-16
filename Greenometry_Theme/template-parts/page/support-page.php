@@ -13,29 +13,29 @@
  **/
 ?>		
 		support-page.php
-		<section>
+		<section class="support-container">
 		
-			<h1>Support Us</h1>
-			<div>
-				<figure>
+			<h1 class="support-container__heading">Support Us</h1>
+			<div class="support-container__item-container">
+				<figure class="support-container__icon">
 					<?php the_field( 'donate_icon' ); ?>
 				</figure>
-				<h3>Donate</h3>
-				<p>Our projects and research need your financial support!</p>
+				<h3 class="support-container__item-heading">Donate</h3>
+				<p class="support-container__item-subtitle">Our projects and research need your financial support!</p>
 			</div>
-			<div>
-				<figure>
+			<div class="support-container__item-container">
+				<figure class="support-container__icon">
 					<?php the_field( 'share_icon' ); ?>
 				</figure>
-				<h3>Share</h3>
-				<p>Help us spread the word.</p>
+				<h3 class="support-container__item-heading">Share</h3>
+				<p class="support-container__item-subtitle">Help us spread the word.</p>
 			</div>
-			<div>
-				<figure>
+			<div class="support-container__item-container">
+				<figure class="support-container__icon">
 					<?php the_field( 'donate_icon' ); ?>
 				</figure>
-				<h3>Collaborate</h3>
-				<p>Have ideas or contributions? Get in touch.</p>
+				<h3 class="support-container__item-heading">Collaborate</h3>
+				<p class="support-container__item-subtitle">Have ideas or contributions? Get in touch.</p>
 			</div>			
 		
 		</section>

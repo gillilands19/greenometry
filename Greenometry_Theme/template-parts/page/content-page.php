@@ -11,10 +11,10 @@
  **/
 ?>		
 		
-		<section>
+		<section class="top-content">
 			content-page.php
-			<h1><?php the_title(); ?></h1>
-			<h2><?php the_field( 'page_subtitle' ) ?></h2>
-			<article><?php the_content(''); ?></article>
+			<h1 class="top-content__heading"><?php the_title(); ?></h1>
+			<h2 class="top-content__subtitle"><?php the_field( 'page_subtitle' ) ?></h2>
+			<article class="top-content__content"><?php the_content(''); ?></article>
 		
 		</section>

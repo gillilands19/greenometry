@@ -1,13 +1,18 @@
 <?php
 
 /**
- * Footer Template for Greenometry Theme
+ * Footer Template - Greenometry Theme
+ * 
+ * 
+ * TODO: add classes
+ * add social menu
+ * add contact form 7 for subscribe
  * 
  **/
 
 ?>
 
-		<footer>
+		<footer class="footer-container">
 
 			<form>
 				<input type="email" name="subscribe-email" id="subscribe-email">

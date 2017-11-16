@@ -12,19 +12,20 @@
  * add pagination
  * add social menu links to each recent question
  * put query options in args array for abstraction
+ * add QA categories to recent questions
  * 
  **/
 ?>	
 		<?php $greenometry_qa_labels = get_post_type_object( 'question_answer' ) ?>
-		<section>
+		<section class="recent-posts">
 		recent-qa.php
-			<h1>
+			<h1 class="recent-posts__heading">
 				<?php 
 				$greenometry_qa_labels = get_post_type_object( 'question_answer' );
 				echo 'Recent ' . $greenometry_qa_labels->labels->name;
 				?>
 			</h1>
-			<h4><?php echo $greenometry_qa_labels->description ?></h4>
+			<h4 class="recent-posts__subtitle"><?php echo $greenometry_qa_labels->description ?></h4>
 
 		<?php
 		//arguments list for Q&A query
@@ -45,23 +46,23 @@
 		if ( $recent_qa_posts->have_posts() ) : while ( $recent_qa_posts->have_posts() ) : $recent_qa_posts->the_post();
 		?>
 
-			<div>
-				<figure>
+			<div class="recent-posts__qa-container">
+				<figure class="recent-posts__qa-thumbnail">
 					<?php the_post_thumbnail(); ?>
 				</figure>
-				<div>
-					<h4><?php the_category( ', ' ); ?></h4>
-					<h2><?php the_title(); ?></h2>
-					<p><?php the_field( 'answer' ); ?></p>
-					<small>Posted: <?php the_time( 'F j, Y' ) ?></small>
+				<div class="recent-posts__qa-text-container">
+					<h4 class="recent-posts__qa-category"><?php the_category( ', ' ); ?></h4>
+					<h2 class="recent-posts__qa-title"><?php the_title(); ?></h2>
+					<p class="recent-posts__qa-answer"><?php the_field( 'answer' ); ?></p>
+					<small class="recent-posts__qa-date">Posted: <?php the_time( 'F j, Y' ) ?></small>
 					<?php //enter social menu here ?>
 				</div>
 			</div>
 
 		<?php endwhile; endif; ?>
 	
-			<div><?php previous_posts_link( '< Older Posts' ); ?></div>
-			<div><?php next_posts_link( 'Newer Posts' ); ?></div>
+			<div class="prev-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
+			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts' ); ?></div>
 
 			<?php
 			//reset main query object
