@@ -9,7 +9,6 @@
  * TODO: Add custom excerpt length as function?
  * Register Post Type publications
  * publications post type loop
- * add classes to elements
  * add link to videos archive page
  * 
  * make post type headings dynamic

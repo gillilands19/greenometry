@@ -8,7 +8,7 @@
  * 
  * TODO: Add classes to elements 
  * put loop/query in function for abstraction
- * sidebar template for categories
+ * sidebar template for Q&A Categories
  * add pagination
  * add social menu links to each recent question
  * put query options in args array for abstraction
@@ -61,8 +61,8 @@
 
 		<?php endwhile; endif; ?>
 	
-			<div class="prev-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
-			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts' ); ?></div>
+			<div class="prev-posts-link"><?php next_posts_link( '< Older Posts' ); ?></div>
+			<div class="next-posts-link"><?php previous_posts_link( 'Newer Posts' ); ?></div>
 
 			<?php
 			//reset main query object
