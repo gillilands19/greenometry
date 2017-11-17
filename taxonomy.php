@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive-Category Template - Greenometry Theme
+ * Taxonomy Template - Greenometry Theme
  * 
  * @author Sean Gilliland, Melissa Wong, Analia Arredondo, Ronald Hamasaki
  * @version 1.0 
@@ -12,9 +12,9 @@
 get_header();
 ?>
 
-		<section class="posts-container">
-		category.php
-			<h1 class="posts-container__heading"><?php echo single_cat_title(); ?></h1>
+		<section class="posts_container">
+		taxonomy.php
+			<h1 class="posts-container__heading"><?php single_term_title(); ?></h1>
 		<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<div class="posts-container__post-container">
@@ -28,8 +28,8 @@ get_header();
 
 		<?php endwhile; ?>
 
-			<div class="previous-posts-link"><?php next_posts_link( '< Older Posts' ); ?></div>
-			<div class="next-posts-link"><?php previous_posts_link( 'Newer Posts >' ); ?></div>
+			<div class="previous-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
+			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts >' ); ?></div>
 
 		<?php endif; ?>
 
