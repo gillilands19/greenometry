@@ -18,9 +18,11 @@
 <html>
 	<head>
 		<?php wp_head(); ?>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- STOP! before adding anything to the head, check the functions.php file and see if it is
+		added dynamically. if it's not, add it to the appropriate function. 
+		The first two functions are for meta tags and enqueueing styles and scripts.  -->
 
-		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	</head>	
 	<body>
 		<header class="main-header">

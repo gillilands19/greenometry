@@ -26,6 +26,15 @@ function add_meta_title_tags() {
 }
 add_action('wp_head', 'add_meta_title_tags');
 
+/**
+ * Enqueue scripts and styles 
+ **/
+function greenometry_scripts_and_styles() {
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
+}
+
+add_action('init', 'greenometry_scripts_and_styles');
+
 /** 
  * Greenometry theme supports and registers
 **/
@@ -69,13 +78,6 @@ function add_taxonomies_to_pages() {
 }
 
 add_action( 'init', 'add_taxonomies_to_pages');
-
-/**
- * Enqueue scripts and styles 
- **/
- function greenometry_scripts_and_styles() {
-	 wp_enqueue_style( 'greenometry_style', get_stylesheet_uri() );
- }
 
 /**
  * Add Question/Answer custom post type 
