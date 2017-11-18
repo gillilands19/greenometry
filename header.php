@@ -18,6 +18,9 @@
 <html>
 	<head>
 		<?php wp_head(); ?>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	</head>	
 	<body>
 		<header class="main-header">
@@ -32,5 +35,7 @@
 				)
 			); 
 				?>
+			<?php dynamic_sidebar('footer'); ?>
+
 		</header>
 	

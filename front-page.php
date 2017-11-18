@@ -6,7 +6,7 @@
  * @version 1.0 
  * 
  * 
- * TODO: 
+ * TODO: Add classes to elements
  * Add subscribe heading to custom fields
  * Create Subscribe contact form 7
  * Add template part or query ask greenometry content
@@ -14,7 +14,6 @@
  * 
  **/
 ?>
-front-page.php
 <?php get_header(); ?>
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

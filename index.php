@@ -30,8 +30,8 @@
 
 		<?php endwhile; ?>
 
-			<div class="previous-posts-link"><?php next_posts_link( '< Older Posts' ); ?></div>
-			<div class="next-posts-link"><?php previous_posts_link( 'Newer Posts >' ); ?></div>
+			<div class="previous-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
+			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts >' ); ?></div>
 
 		<?php endif; ?>
 
