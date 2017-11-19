@@ -33,11 +33,11 @@
 				'theme_location' 		=> 'main-menu',
 				'container'				=> 'nav',
 				'container_class'		=> 'main-header__nav',
-				'items_wrap'			=> '<ul class="main-header__nav-list %2$s">%3$s</ul>', //TODO add classes to ul
+				'items_wrap'			=> '<ul class="main-header__nav-list %2$s">%3$s</ul>',
 				)
 			); 
 				?>
-			<?php dynamic_sidebar('footer'); ?>
+			<button class="main-header__donate-button">Donate</button>
 
 		</header>
 	
