@@ -3,3 +3,4 @@ greenometry_dev/*
 .ds_store
 .DS_Store
 assets/*
+.vscode

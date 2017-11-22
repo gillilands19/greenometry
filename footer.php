@@ -4,7 +4,7 @@
  * Footer Template - Greenometry Theme
  * 
  * 
- * TODO: add classes
+ * TODO:
  * add social menu
  * add contact form 7 for subscribe
  * 
