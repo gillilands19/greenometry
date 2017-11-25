@@ -60,7 +60,7 @@ a {
 .top-content {
   background: url("../assets/wind.jpg");
   background-size: cover;
-  height: 60vh; }
+  height: 40vh; }
 
 .top-content__heading {
   color: #fff;
@@ -92,12 +92,14 @@ a {
 .ask-front {
   background-color: #6096C2; }
 
-.ask-front__heading {
+.ask-front__heading, .ask-front__sub-heading {
   color: #fff;
+  text-shadow: 2px 2px 8px #333; }
+
+.ask-front__heading {
   font-family: Helvetica, sans-serif; }
 
 .ask-front__sub-heading {
-  color: #fff;
   font-weight: 200;
   font-size: 1.2em;
   text-align: center; }
