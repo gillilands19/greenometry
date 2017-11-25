@@ -59,10 +59,8 @@ a {
   a:visited {
     color: #01693A; }
 
-.top-content {
-  background: url("../assets/wind.jpg");
-  background-size: cover;
-  height: 40vh; }
+#greeter {
+  background: url("../assets/wind.jpg"); }
 
 .top-content__heading {
   color: #fff;
@@ -155,5 +153,9 @@ section {
   max-width: 1400px;
   margin: auto;
   padding: 10% 0; }
+
+.top-content {
+  background-size: cover;
+  height: 40vh; }
 
 /*# sourceMappingURL=style.css.map */
