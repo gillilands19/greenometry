@@ -33,7 +33,8 @@ h1, h2, h3 {
 
 h1 {
   font-size: 4.5em;
-  text-align: center; }
+  text-align: center;
+  color: #01693A; }
 
 h2 {
   font-size: 3.7em;
@@ -58,6 +59,9 @@ a {
   text-decoration: none; }
   a:visited {
     color: #01693A; }
+
+.white-text {
+  color: #fff; }
 
 #greeter {
   background: url("../assets/wind.jpg"); }
@@ -157,5 +161,8 @@ section {
 .top-content {
   background-size: cover;
   height: 40vh; }
+
+.single-section__heading {
+  color: #01693A; }
 
 /*# sourceMappingURL=style.css.map */
