@@ -19,9 +19,9 @@
 
 		<section class="top-content">
 			<h1 class="top-content__heading"><?php  the_field( 'tagline' );  ?></h1>
-			<button class="top-content__btn">Learn More</button>
+			<button class="button">Learn More</button>
 		</section>
-		<section class"subscribe-front">
+		<section class="subscribe-front">
 			<h4 class="subscribe-front__heading"><?php the_field( 'subscribe_heading' ); ?></h4>
 			<div class="subscribe-front__form-container"><?php /*place subscribe form here*/ ?></div>
 		</section>
@@ -39,18 +39,21 @@
 				<figure class="recent-posts__post-thumbnail">
 					<?php the_post_thumbnail(); ?>
 				</figure>
-				<h3 class="recent-posts__post-title"><?php the_title(); ?></h3>
-				<p class="recent-posts__post-excerpt"><?php the_excerpt(); ?></p>
-				<a href="<?php echo get_permalink(); ?>">
-					<button class="recent-posts__more-link">Read More</button>
-				</a>
+				<div class="recent-posts__post-text">
+					<h3 class="recent-posts__post-title"><?php the_title(); ?></h3>
+					<p class="recent-posts__post-excerpt"><?php the_excerpt(); ?></p>
+					<a href="<?php echo get_permalink(); ?>">
+						<button class="button">Read More</button>
+					</a>
+				</div>
 			</div>
 			<?php endwhile; endif; ?>
 		</section>
 
 		<section class="ask-front">
 			<h2 class="ask-front__heading">Ask Greenometry</h2>
-			<h4 class="ask-front__sub-heading">You have the questions and we have the data! send us your questions and we will provide the answers</h4>
+			<p class="ask-front__sub-heading">You have the questions and we have the data!</p>
+			<p class="ask-front__sub-heading">Send us your questions and we will provide the answers.</p>
 			<?php //TODO add Ask Greenometry template part or query ask greenometry page content or add c7 shortcode ?>
 		</section>
 
