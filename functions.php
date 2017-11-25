@@ -132,6 +132,21 @@ function custom_post_types() {
 
 		)
 	);
+	register_post_type('publications', 
+	array(
+		'labels'		=> array(
+		'name'				=> __('Publications'),
+		'singular_name'		=> __('Publication'),
+		'add_new_item'		=> __('Add New Publication')
+	),
+	'public'		=> true,
+	'supports'		=> array('title', 'custom-fields'),
+	'has_archive'	=> true,
+	'menu_position'	=> 20,
+	'menu_icon'		=> 'dashicons-media-document'
+
+	)
+);
 }
 
 add_action( 'init', 'custom_post_types' );

@@ -6,3 +6,4 @@ assets/*
 .sass-cache/*
 sass/*
 css/*
+.vscode

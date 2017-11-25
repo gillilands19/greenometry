@@ -7,6 +7,7 @@
  * 
  * 
  * TODO: Add classes to elements
+ *  add conditional, if is qa-category taxonomy show sidebar.php
  **/
 
 get_header();

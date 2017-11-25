@@ -6,7 +6,7 @@
  * @version 1.0 
  * 
  * 
- * TODO: Add classes to elements
+ * TODO:
  **/
 
 get_header();
