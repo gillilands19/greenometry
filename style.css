@@ -9,5 +9,5 @@ Description: A custom theme for Greenometry. A non-profit that promotes the quan
 Version: 1.0.0
 */
 
-@import 'css/wp-core.css';
 @import 'css/style.css';
+@import 'css/wp-core.css';

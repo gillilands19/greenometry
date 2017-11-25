@@ -22,7 +22,7 @@
 				<?php //footer social media navigation goes here ?>
 			</div>
 
-			<button class="footer__donate-button">Donate</button>
+			<button class="donate-button">Donate</button>
 			
 
 		</footer>

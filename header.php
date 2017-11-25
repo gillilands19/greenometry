@@ -37,7 +37,7 @@
 				)
 			); 
 				?>
-			<button class="main-header__donate-button">Donate</button>
+			<button class="donate-button">Donate</button>
 
 		</header>
 	
