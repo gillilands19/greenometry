@@ -20,7 +20,7 @@
 
 		<section class="top-content">
 			<h1 class="top-content__heading"><?php  the_field( 'tagline' );  ?></h1>
-			<button class="button">Learn More</button>
+			<button class="top-content__button button">Learn More</button>
 		</section>
 		<section class="subscribe-front">
 			<h4 class="subscribe-front__heading"><?php the_field( 'subscribe_heading' ); ?></h4>
