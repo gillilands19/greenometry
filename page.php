@@ -17,6 +17,7 @@ echo 'page.php';
 
 if (have_posts()) : while (have_posts()) : the_post();
 
+
 if ( is_page('contact') || is_page('donate') ){
 
 	get_template_part('/template-parts/page/single-section');
@@ -33,6 +34,7 @@ if ( is_page('contact') || is_page('donate') ){
 	}
 
 	if ( is_page('ask-greenometry') ) {
+
 		get_template_part('/template-parts/page/recent', 'qa');
 	}
 }

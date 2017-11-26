@@ -18,18 +18,19 @@
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<section id="greeter" class="top-content">
+		<section id="greeter" class="top-content v-pad10 ">
 			<h1 class="top-content__heading"><?php  the_field( 'tagline' );  ?></h1>
 			<button class="top-content__button button">Learn More</button>
 		</section>
-		<section class="subscribe-front">
+		
+		<section class="subscribe-front v-pad5">
 			<h4 class="subscribe-front__heading"><?php the_field( 'subscribe_heading' ); ?></h4>
-			<div class="subscribe-front__form-container"><?php /*place subscribe form here*/ ?></div>
+			<div class="subscribe-front__form-container"><?php echo do_shortcode('[contact-form-7 id="92"]'); ?></div>
 		</section>
 
 		<?php endwhile; endif; ?>
 
-		<section class="recent-posts">
+		<section class="recent-posts v-pad10">
 			<h2 class="recent-posts__heading">Recent Posts</h2>
 			<?php //recent_posts_home();
 			$latest_posts_home = new WP_Query( array( 'posts_per_page' => 3 ) );
@@ -51,11 +52,11 @@
 			<?php endwhile; endif; ?>
 		</section>
 
-		<section class="ask-front">
+		<section class="ask-front v-pad5">
 			<h2 class="ask-front__heading">Ask Greenometry</h2>
 			<p class="ask-front__sub-heading">You have the questions and we have the data!</p>
 			<p class="ask-front__sub-heading">Send us your questions and we will provide the answers.</p>
-			<?php //TODO add Ask Greenometry template part or query ask greenometry page content or add c7 shortcode ?>
+			<?php echo do_shortcode('[contact-form-7 id="94"]'); ?>
 		</section>
 
 <?php get_footer(); ?>
