@@ -235,24 +235,37 @@ function show_custom_post_types_archive( $query ) {
 add_filter( 'pre_get_posts', 'show_custom_post_types_archive' );
 
 register_sidebar( array(
-		'name' => 'Footer',
-		'id' => 'footer',
-		'description' => 'Appears in the footer area',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>'
-	) );
+	'name' => 'Footer',
+	'id' => 'footer',
+	'description' => 'Appears in the footer area',
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title'  => '<h4>',
+	'after_title'   => '</h4>'
+	) 
+);
 
 register_sidebar( array(
-		'name' => 'Header',
-		'id' => 'header',
-		'description' => 'Appears in the header area',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>'
-	) );
+	'name' 			=> 'Header',
+	'id' 			=> 'header',
+	'description'	=> 'Appears in the header area',
+	'before_widget'	=> '<div id="%1$s" class="widget %2$s">',
+	'after_widget' 	=> '</div>',
+	'before_title'  => '<h4>',
+	'after_title'   => '</h4>'
+	) 
+);
+
+register_sidebar( array( 
+	'name' 			=> 'Categories',
+	'id'			=> 'categories',
+	'description'	=> 'Sidebar for QA categories',
+	'before_widget'	=> '<div id="%1$s" class="widget %2$s">',
+	'after_widget'	=> '</div>',
+	'before_title'	=> '<h4>',
+	'after_title'	=> '</h4>'	
+	) 
+);
 
 
 /**

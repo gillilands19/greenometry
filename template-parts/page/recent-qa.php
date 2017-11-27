@@ -59,10 +59,13 @@
 				</div>
 			</div>
 
-		<?php endwhile; endif; ?>
-	
+		<?php endwhile; ?>
+
 			<div class="prev-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
 			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts' ); ?></div>
+	
+		<?php endif; ?>
+
 
 			<?php
 			//reset main query object
