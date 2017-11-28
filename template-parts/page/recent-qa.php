@@ -66,13 +66,23 @@
 	
 		<?php endif; ?>
 
+		</section>
 
 			<?php
 			//reset main query object
 			$wp_query = NULL;
 			$wp_query = $main_query_backup;
 			?>
-
-		<?php //category sidebar  ?>
+		<aside class="category-sidebar">
+			<ul class="categor-sidebar__item-list">
+				<?php 
 	
-		</section>
+				$qa_category_terms = get_terms( array( 'taxonomy' => 'question_answer_category', 'hide_empty' => false ) );
+				$site_url = get_site_url();
+				$site_url .= '/?question_answer_category=';
+				foreach($qa_category_terms as $term) {
+					echo '<a href="' . $site_url . $term->slug . '"><li>' . $term->name .'</li></a>';
+				}	
+				?>
+			</ul>
+		</aside>
