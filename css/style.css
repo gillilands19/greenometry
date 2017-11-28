@@ -33,7 +33,8 @@ h1, h2, h3 {
 
 h1 {
   font-size: 4.5em;
-  text-align: center; }
+  text-align: center;
+  color: #01693A; }
 
 h2 {
   font-size: 3.7em;
@@ -59,8 +60,13 @@ a {
   a:visited {
     color: #01693A; }
 
+.white-text {
+  color: #fff; }
+
 #greeter {
-  background: url("../assets/wind.jpg"); }
+  background: url("../assets/wind.jpg");
+  height: 40vh;
+  background-size: cover; }
 
 .top-content__heading {
   color: #fff;
@@ -151,11 +157,41 @@ html {
 
 section {
   max-width: 1400px;
-  margin: auto;
-  padding: 10% 0; }
+  margin: auto; }
 
 .top-content {
-  background-size: cover;
-  height: 40vh; }
+  background-size: cover; }
+
+.v-pad10 {
+  padding-top: 10%;
+  padding-bottom: 10%; }
+
+.v-pad5 {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.single-section {
+  max-width: 940px;
+  margin: auto; }
+
+.single-section__heading {
+  color: #01693A; }
+
+.wpcf7-form > p {
+  margin-bottom: 20px; }
+
+.wpcf7-form-control-wrap > input, .wpcf7-form-control-wrap > textarea {
+  width: 100%;
+  padding: 1%;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em; }
+
+#wpcf7-f92-p33-o1 > .wpcf7-form {
+  display: flex;
+  max-width: 940px;
+  margin: auto; }
+
+#wpcf7-f92-p33-o1 > .wpcf7-form > p {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
