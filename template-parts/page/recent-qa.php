@@ -16,7 +16,7 @@
  * 
  **/
 ?>	
-		<?php $greenometry_qa_labels = get_post_type_object( 'question_answer' ) ?>
+		<?php $greenometry_qa_labels = get_post_type_object( 'question_answer' ); ?>
 		<section class="recent-posts">
 		recent-qa.php
 			<h1 class="recent-posts__heading">

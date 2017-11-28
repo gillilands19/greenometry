@@ -17,18 +17,26 @@ echo 'page.php';
 
 if (have_posts()) : while (have_posts()) : the_post();
 
-get_template_part( '/template-parts/page/content', 'page' );
 
-if ( is_page('about-us') ){
-		
-		get_template_part('/template-parts/page/team', 'page' );
+if ( is_page('contact') || is_page('donate') ){
 
-		get_template_part('/template-parts/page/support', 'page');
+	get_template_part('/template-parts/page/single-section');
 
-}
+} else {
+	get_template_part( '/template-parts/page/content', 'page' );
 
-if ( is_page('ask-greenometry') ) {
-	get_template_part('/template-parts/page/recent', 'qa');
+	if ( is_page('about-us') ){
+			
+			get_template_part('/template-parts/page/team', 'page' );
+
+			get_template_part('/template-parts/page/support', 'page');
+
+	}
+
+	if ( is_page('ask-greenometry') ) {
+
+		get_template_part('/template-parts/page/recent', 'qa');
+	}
 }
 
 endwhile; endif;
