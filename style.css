@@ -12,5 +12,205 @@ Version: 1.0.0
 @import 'css/style.css';
 @import 'css/wp-core.css';
 
-.top-content__heading {
+/*+++++++Content Page+++++++*/
+
+.top-content {
+    height: auto;
+}
+
+h1.top-content__heading{
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+h2.top-content__subtitle {
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 2%;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.top-content__content{
+    padding-bottom: 1%;
+}
+
+
+#sunset {
+    background-image: url(../greenometry/assets/sunset.jpg);
+    background-size: cover;
+    padding-top: 6%;
+    padding-bottom:7%;
+}
+
+p {
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: auto;
+    padding: 1%;
+}
+
+
+
+/*+++++++Team Page+++++++*/
+
+.team-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+}
+
+
+.team-container__heading {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.team-container__member-container {
+    display: inline-block;
+    width: 33%;
+    height: auto;
+    text-align: center;
+}
+
+team-container__member-photo{
+    width: 250px;
+    height: 250px;
+    border: 0;
+}
+
+
+.team-container__member-name {
+    width: 33%;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: #01693A;
+}
+
+
+.team-container__member-titles {
+    text-align: center;
+    color: black;
+    margin-bottom: 20%;
+    text-shadow: none;
+}
+
+
+.team-container__directors {
+    width: 22%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1% 5%;
+    display: block;
+    font-size: 1em;
+    margin: 20px auto;
+    background-color: #FFC86D;
+    border: 1px solid #FFC86D;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: -1px 2px 10px #333;
+}
+
+
+.team-container__advisory {
+    width: 22%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1% 5%;
+    display: block;
+    font-size: 1em;
+    margin: 20px auto;
+    background-color: #FFC86D;
+    border: 1px solid #FFC86D;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: -1px 2px 10px #333;
+}
+
+/*+++++++Support Page+++++++*/
+
+.support-container{
+    padding-top: 5%;
+    padding-bottom: 6%;
+    background-color: #6096C2;
+
+}
+
+h1.support-container__heading {
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    margin-bottom: 40px;
+}
+
+h3.support-container__item-heading {
+    font-size: 2.25em;
+    font-family: Georgia, serif;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 4%;
+}
+
+p.support-container__item-subtitle{
+    line-height: 1.5;
+    width:auto;
+    margin: auto;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+div.support-container__item-container1 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+div.support-container__item-container2 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    
+}
+
+div.support-container__item-container3 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+img#donate {
+    display: inline-block;
+    width: 165px;
+    height: auto;
+    text-align: center;
+}
+
+img#share {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    text-align: center;
+
+}
+
+img#collab {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    text-align: center;
 }
