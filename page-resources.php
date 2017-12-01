@@ -10,6 +10,8 @@
  * Register Post Type publications
  * publications post type loop
  * 
+ * Pull advanced custom fields for publications
+ * 
  * make post type headings dynamic
  * 
  * 
@@ -63,6 +65,7 @@ get_header();
 		<?php 
 			$recent_publications_resources = new WP_Query( array( 'post_type' => 'publications', 'posts_per_page' => 7 ) );
 			if ( $recent_publications_resources->have_posts() ) : while ( $recent_publications_resources->have_posts() ) : $recent_publications_resources->the_post();
+			//pull advanced custom fields for publications
 		?>
 
 
