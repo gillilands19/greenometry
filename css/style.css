@@ -65,7 +65,7 @@ a {
 
 #greeter {
   background: url("../assets/wind.jpg");
-  height: 40vh;
+  height: 50vh;
   background-size: cover; }
 
 .top-content__heading {
@@ -178,7 +178,20 @@ section {
   color: #01693A; }
 
 .wpcf7-form > p {
-  margin-bottom: 20px; }
+  position: relative; }
+
+label.text, label.textarea {
+  color: #999;
+  position: absolute;
+  z-index: 2; }
+
+label.text {
+  top: 50%;
+  left: 1%; }
+
+label.textarea {
+  top: 15%;
+  left: 1%; }
 
 .wpcf7-form-control-wrap > input, .wpcf7-form-control-wrap > textarea {
   width: 100%;
@@ -187,11 +200,12 @@ section {
   font-size: 1em; }
 
 #wpcf7-f92-p33-o1 > .wpcf7-form {
-  display: flex;
   max-width: 940px;
   margin: auto; }
+  #wpcf7-f92-p33-o1 > .wpcf7-form p {
+    display: inline; }
 
-#wpcf7-f92-p33-o1 > .wpcf7-form > p {
-  display: flex; }
+#wpcf7-f92-p33-o1 > form > p:nth-child(3) > input {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
