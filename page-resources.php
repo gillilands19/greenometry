@@ -29,13 +29,13 @@ get_header();
 		<?php endwhile; endif; ?>
 		</section>
 		<section class="posts-container">
-			<h2 class="posts-container__post-type-heading">Recent Articles &amp Posts</h2>
+			<h2 class="posts-container__post-type-heading">Recent Articles &amp; Posts</h2>
 		<?php $latest_posts_resources = new WP_Query( array( 'posts_per_page' => 3 ) );
 			if ( $latest_posts_resources->have_posts() ) : while ( $latest_posts_resources->have_posts() ) : $latest_posts_resources->the_post();
 		?>
 			<a class="posts-container__all-posts-link" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">See More</a>
 			<div class="posts-container__post-container">
-				<figure"posts-container__post-thumbnail">
+				<figure class="posts-container__post-thumbnail">
 					<?php the_post_thumbnail(); ?>
 				</figure>
 				<h3 class="posts-container__post-title"><?php the_title(); ?></h3>
