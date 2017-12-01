@@ -43,7 +43,7 @@ h2.top-content__subtitle {
     background-image: url(../greenometry/assets/sunset.jpg);
     background-size: cover;
     padding-top: 6%;
-    padding-bottom:7%;
+    padding-bottom:8%;
 }
 
 p {
@@ -79,12 +79,11 @@ p {
     text-align: center;
 }
 
-team-container__member-photo{
-    width: 250px;
+.wp-post-image {
+    max-width: 250px;
     height: 250px;
-    border: 0;
+    border-radius: 300px;
 }
-
 
 .team-container__member-name {
     width: 33%;
@@ -131,6 +130,17 @@ team-container__member-photo{
     color: #fff;
     border-radius: 0;
     box-shadow: -1px 2px 10px #333;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+    color:white;
 }
 
 /*+++++++Support Page+++++++*/

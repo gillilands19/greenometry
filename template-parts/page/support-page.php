@@ -36,7 +36,7 @@
 				</figure>
                 <img id="share" src="<?php bloginfo( 'template_directory' ); ?>/assets/share.png" alt="share">
 				<h3 class="support-container__item-heading">Share</h3>
-				<p class="support-container__item-subtitle">Help us spread the word.<br> Share our page.</p>
+				<p class="support-container__item-subtitle">Help us spread the word and<br> share our page.</p>
 			</div>
             
 			<div class="support-container__item-container3">

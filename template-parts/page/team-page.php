@@ -18,7 +18,7 @@
             
 			<h1 class="team-container__heading"><?php
 			$greenometry_team_labels = get_post_type_object( 'team_members' ); 
-			echo $greenometry_team_labels->labels->name ?>
+			echo $greenometry_team_labels->labels->name; ?>
 			</h1>
             
 			<?php
