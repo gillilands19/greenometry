@@ -15,16 +15,25 @@
 		<footer class="footer">
 
 			<div class="footer__subscribe">
-				<?php // subscribe form. contact form 7 shortcode goes here. This can eventually be tied into a mailing list app like mailchimp.
-					//for now it will send an email to ory with the email address of the subscriber so he can manually enter it into his mailing list  ?>	
+				<?php dynamic_sidebar('footer'); ?>	
 			</div>
+
 			<div class="footer__nav">
-				<?php //footer social media navigation goes here ?>
+				<?php 
+				//footer social media navigation goes here 
+
+				wp_nav_menu( array(
+					'theme_location' 		=> 'social',
+					'container'				=> 'nav',
+					'container_class'		=> 'footer__nav',
+					'items_wrap'			=> '<ul class="footer__nav-list %2$s">%3$s</ul>',
+					)
+				); 
+				?>
+				
 			</div>
 
-			<button class="donate-button">Donate</button>
-			
-
+				<button class="donate-button">Donate</button>
 		</footer>
 
 
