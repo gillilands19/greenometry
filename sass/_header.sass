@@ -13,10 +13,12 @@ header.main-header
 	figure
 		align-self: flex-start
 		margin-left: 20px
-		img
-			max-width: 300px !important
+		.custom-logo-link > img
+			width: 100%
+			max-width: 300px 
 			height: auto
-
+			@include forSmallScreens(1100)
+				max-width: 200px 
 
 // Nav
 nav.main-header__nav

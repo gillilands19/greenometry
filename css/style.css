@@ -19,7 +19,7 @@
   margin-left: 40px;
   font-size: 1.1em;
   box-shadow: none;
-  max-height: 50px; }
+  height: 50px; }
 
 .inline {
   margin: 0;
@@ -142,9 +142,13 @@ header.main-header {
   header.main-header figure {
     align-self: flex-start;
     margin-left: 20px; }
-    header.main-header figure img {
-      max-width: 300px !important;
+    header.main-header figure .custom-logo-link > img {
+      width: 100%;
+      max-width: 300px;
       height: auto; }
+      @media (max-width: 68.75em) {
+        header.main-header figure .custom-logo-link > img {
+          max-width: 200px; } }
 
 nav.main-header__nav {
   display: flex;
@@ -188,7 +192,7 @@ footer {
     text-transform: uppercase;
     margin: 0 0 10px 0;
     color: #bbb;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: left;
     display: inline; }
 
