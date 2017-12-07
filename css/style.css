@@ -25,7 +25,9 @@
   margin: 0;
   box-shadow: none;
   min-height: 40px;
-  z-index: 2; }
+  z-index: 2;
+  padding-top: 1%;
+  padding-bottom: 1%; }
 
 html {
   font-size: 16px; }
@@ -87,6 +89,13 @@ a {
 .subscribe-front {
   background-color: #6096C2;
   clear: both; }
+
+#wpcf7-f92-p33-o1 > form {
+  display: flex;
+  justify-content: center; }
+  #wpcf7-f92-p33-o1 > form input[type="email"].wpcf7-email {
+    width: 100%;
+    margin: 0; }
 
 .recent-posts {
   max-width: 940px;
@@ -187,9 +196,11 @@ footer {
 #wpcf7-f95-o3 > form {
   display: grid;
   grid-template-columns: 70% 30%; }
+  #wpcf7-f95-o3 > form input[type="email"] {
+    width: 100%; }
   #wpcf7-f95-o3 > form input[type="submit"] {
-    background-color: #6096C2;
-    border-color: #6096C2; }
+    background-color: #3B5998;
+    border-color: #3B5998; }
 
 .footer__nav {
   display: flex;
@@ -239,12 +250,6 @@ section {
 .single-section__heading {
   color: #01693A; }
 
-.wpcf7-form {
-  display: block;
-  margin: auto;
-  width: 100%;
-  max-width: 940px; }
-
 .classemail-inline > input {
   min-height: 40px; }
 
@@ -263,7 +268,7 @@ span.wpcf7-list-item-label {
 #wpcf7-f92-p33-o1 > .wpcf7-form {
   display: flex;
   max-width: 940px;
-  margin: 0; }
+  margin: auto; }
 
 #wpcf7-f92-p33-o1 > .wpcf7-form > p {
   display: flex; }
