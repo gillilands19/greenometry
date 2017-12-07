@@ -15,6 +15,7 @@
 		<footer class="footer">
 
 			<div class="footer__subscribe">
+				<h4>Subscribe To Our Mailing List</h4>
 				<?php dynamic_sidebar('footer'); ?>	
 			</div>
 
@@ -33,9 +34,8 @@
 				
 			</div>
 
-				<button class="donate-button">Donate</button>
+			<button class="donate-button">Donate</button>
 		</footer>
-
 
 	<?php wp_footer(); ?> 
 	</body>
