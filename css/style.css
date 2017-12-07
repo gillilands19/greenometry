@@ -196,12 +196,12 @@ footer {
     text-align: left;
     display: inline; }
 
-#wpcf7-f95-o3 > form {
+#wpcf7-f95-o1 > form, #wpcf7-f95-o2 > form, #wpcf7-f95-o3 > form {
   display: grid;
   grid-template-columns: 70% 30%; }
-  #wpcf7-f95-o3 > form input[type="email"] {
+  #wpcf7-f95-o1 > form input[type="email"], #wpcf7-f95-o2 > form input[type="email"], #wpcf7-f95-o3 > form input[type="email"] {
     width: 100%; }
-  #wpcf7-f95-o3 > form input[type="submit"] {
+  #wpcf7-f95-o1 > form input[type="submit"], #wpcf7-f95-o2 > form input[type="submit"], #wpcf7-f95-o3 > form input[type="submit"] {
     background-color: #3B5998;
     border-color: #3B5998; }
 
