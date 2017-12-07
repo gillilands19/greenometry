@@ -30,7 +30,10 @@ add_action('wp_head', 'add_meta_title_tags');
  * Enqueue scripts and styles 
  **/
 function greenometry_scripts_and_styles() {
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+	wp_register_style( 'style', get_stylesheet_uri() );
+	wp_enqueue_style( 'style' );
+	wp_register_script( 'font-awesome', 'https://use.fontawesome.com/84801a31cc.js' );
+	wp_enqueue_script( 'font-awesome' );
 }
 
 add_action('init', 'greenometry_scripts_and_styles');
@@ -266,6 +269,8 @@ register_sidebar( array(
 	'after_title'	=> '</h4>'	
 	) 
 );
+
+
 
 
 /**
