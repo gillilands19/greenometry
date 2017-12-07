@@ -2,7 +2,6 @@ greenometry_dev/*
 .htaccess
 .ds_store
 .DS_Store
-assets/*
 .sass-cache/*
 sass/*
 css/*
