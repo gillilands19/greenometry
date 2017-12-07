@@ -53,8 +53,7 @@
 
 		<section class="ask-front v-pad5">
 			<h2 class="ask-front__heading">Ask Greenometry</h2>
-			<p class="ask-front__sub-heading">You have the questions and we have the data!</p>
-			<p class="ask-front__sub-heading">Send us your questions and we will provide the answers.</p>
+			<p class="ask-front__sub-heading">You have the questions and we have the data!<br>Send us your questions and we will provide the answers.</p>
 			<?php echo do_shortcode('[contact-form-7 id="94"]'); ?>
 		</section>
 

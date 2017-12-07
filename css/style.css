@@ -96,7 +96,7 @@ a {
 .wp-post-image {
   max-width: 250px;
   height: 250px;
-  border-radius: 300px; }
+  border-radius: 250px; }
 
 .ask-front {
   background-color: #6096C2; }
@@ -181,7 +181,10 @@ section {
   margin-bottom: 20px; }
 
 .wpcf7-form-control-wrap > input, .wpcf7-form-control-wrap > textarea {
-  width: 100%;
+  width: 90%;
+  max-width: 940px;
+  display: block;
+  margin: auto;
   padding: 1%;
   font-family: Helvetica, sans-serif;
   font-size: 1em; }
@@ -193,5 +196,16 @@ section {
 
 #wpcf7-f92-p33-o1 > .wpcf7-form > p {
   display: flex; }
+
+.ask-front__sub-heading {
+  margin-bottom: 20px; }
+
+span.wpcf7-list-item.first.last {
+  width: 90%;
+  max-width: 940px;
+  margin: 30px auto 10px;
+  display: block;
+  font-family: "Helvetica", Arial, sans-serif;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
