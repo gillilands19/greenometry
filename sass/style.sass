@@ -3,6 +3,7 @@
 @import typography
 @import front-page
 @import _header
+@import _footer
 
 html
 	box-sizing: border-box
@@ -31,27 +32,45 @@ section
 	color: $green
 
 // Forms
-.wpcf7-form > p 
-	margin-bottom: 20px
+.classemail-inline > input
+	min-height: 40px
 
 .wpcf7-form-control-wrap > input, .wpcf7-form-control-wrap > textarea
-	width: 100%
+	width: 90%
+	max-width: 940px
+	display: block
+	margin: auto
 	padding: 1%
 	font-family: Helvetica, sans-serif
 	font-size: 1em
 
-.wpcf7-form > p > input[type="submit"]
+span.wpcf7-list-item-label
+	font-family: Helvetica, sans-serif
 
 #wpcf7-f92-p33-o1 > .wpcf7-form
 	display: flex
 	max-width: 940px
 	margin: auto
 
-#wpcf7-f92-p33-o1 > .wpcf7-form > p 
-	display: flex
+// Main Contact Form
+#wpcf7-f4-p76-o1 > form > span > input
+	margin-bottom: 20px
 
-//
+// Footer Contact
+#wpcf7-f95-o3 > form p
+	display: inline-block
 
+// Ask Greenometry
+.ask-front__sub-heading
+	margin-bottom: 20px
+
+span.wpcf7-list-item.first.last //checkbox
+	width: 90%
+	max-width: 940px
+	margin: 30px auto 10px
+	display: block
+	font-family: 'Helvetica', Arial, sans-serif
+	color: #fff
 
 
 

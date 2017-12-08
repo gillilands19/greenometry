@@ -1,19 +1,27 @@
 #greeter
 	background: url('../assets/wind.jpg')
-	height: 40vh
+	min-height: 40vh
 	background-size: cover
-
-.top-content__heading
-	color: #fff
-	text-shadow: 2px 2px 8px #bbb
-	margin-bottom: 40px
+	.top-content__heading
+		text-shadow: 2px 2px 8px #999
+		margin-bottom: 40px
 
 .top-content__button
 	box-shadow: -1px 2px 10px #333
 
+// +++++++++ Mailing List Promo ++++++++ //
 .subscribe-front
 	background-color: $lightBlue
+	clear: both
 
+#wpcf7-f92-p33-o1 > form
+	display: flex
+	justify-content: center
+	input[type="email"].wpcf7-email
+		width: 100%
+		margin: 0
+
+// ++++++++++++ Recent Posts +++++++++++ //
 .recent-posts
 	max-width: 940px
 	margin: auto
@@ -29,10 +37,11 @@
 	margin-bottom: 10px
 
 .wp-post-image
-	max-width: 300px
-	height: 300px
-	border-radius: 300px
+	max-width: 250px
+	height: 250px
+	border-radius: 250px
 
+// ++++++++++ Ask Greenometry ++++++++++ //
 .ask-front
 	background-color: $lightBlue
 

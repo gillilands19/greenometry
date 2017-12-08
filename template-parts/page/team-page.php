@@ -13,8 +13,10 @@
  **/
 ?>		
 		team-page.php
-		<section class="team-container">
-            
+
+		<?php $greenometry_team_labels = get_post_type_object( 'team_members' );  ?>
+
+		<section class="team-container">            
             
 			<h1 class="team-container__heading"><?php
 			$greenometry_team_labels = get_post_type_object( 'team_members' ); 
@@ -26,8 +28,7 @@
 			if ( $greenometry_team->have_posts() ) : while ( $greenometry_team->have_posts() ) : $greenometry_team->the_post();
 			?>
         
-            
-			<div class="team-container__member-container">
+      <div class="team-container__member-container">
 				<figure class="team-container__member-photo">
 					<?php the_post_thumbnail(); ?>
 				</figure>
