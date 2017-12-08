@@ -26,12 +26,13 @@ get_header();
 
 		<?php endwhile; endif; ?>
 		</section>
+
 		<section class="posts-container">
 			<h2 class="posts-container__post-type-heading">Recent Articles &amp; Posts</h2>
 		<?php $latest_posts_resources = new WP_Query( array( 'posts_per_page' => 3 ) );
 			if ( $latest_posts_resources->have_posts() ) : while ( $latest_posts_resources->have_posts() ) : $latest_posts_resources->the_post();
 		?>
-			<a class="posts-container__all-posts-link" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">See More</a>
+			
 			<div class="posts-container__post-container">
 				<figure class="posts-container__post-thumbnail">
 					<?php the_post_thumbnail(); ?>
@@ -41,7 +42,10 @@ get_header();
 				<a href="<?php the_permalink(); ?>"><button class="posts-container_more-link">Read More</button></a>
 			</div>
 		<?php endwhile; endif; ?>
+		<a class="posts-container__all-posts-link" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">See More</a>
 		</section>
+
+
 		<section class="posts-container">
 		<h2 class="posts-container__post-type-heading">Recent Videos</h2>
 		<?php

@@ -38,7 +38,7 @@
 				)
 			); 
 			?>
-			<button class="donate-button">Donate</button>
+			<button class="donate-button" href="<?php bloginfo('wpurl'); ?>/donate">Donate</button>
 
 		</header>
 	
