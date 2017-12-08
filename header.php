@@ -17,18 +17,18 @@
 
 <html>
 	<head>
-		<?php wp_head(); ?>
-		
 		<!-- STOP! before adding anything to the head, check the functions.php file and see if it is
 		added dynamically. if it's not, add it to the appropriate function. 
 		The first two functions are for meta tags and enqueueing styles and scripts.  -->
-
+		
+		<?php wp_head(); ?>
 	</head>	
 	<body>
 		<header class="main-header">
 			<figure class="main-header__logo">
 				<?php the_custom_logo(); ?>
 			</figure>
+
 			<?php 
 			wp_nav_menu( array(
 				'theme_location' 		=> 'main-menu',
@@ -39,6 +39,16 @@
 			); 
 			?>
 			<button class="donate-button">Donate</button>
+
+			<div id="menu-icons">
+				<span id="open">
+					&#9776;
+				</span> <!-- #open -->
+
+				<span id="close">
+					&#10006;
+				</span> <!-- #close -->
+			</div> <!-- #menu-icons -->
 
 		</header>
 	

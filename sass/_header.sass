@@ -8,17 +8,24 @@ header.main-header
 	display: flex
 	justify-content: space-between
 	align-items: center
-	@include forSmallScreens(1000)
-		flex-direction: column
+	//@include forSmallScreens(1000)
+	//	flex-direction: column
 	figure
 		align-self: flex-start
 		margin-left: 20px
 		img
 			max-width: 300px !important
 			height: auto
+	button
+		@include forSmallScreens(1100)
+			display: none
 
 
 // Nav
+#nav-links
+	display: flex
+
+
 nav.main-header__nav
 	display: flex 
 	flex-grow: 2
@@ -39,6 +46,12 @@ ul.main-header__nav-list
 				color: #000
 			&:hover
 				border-bottom: 2px solid #000
+
+#menu-icons
+	display: none
+	font-size: 2em
+	@include forSmallScreens(1100)
+		display: inline
 
 
 
