@@ -238,6 +238,43 @@ footer > .donate-button {
   bottom: 10%;
   right: 0; }
 
+section#bottom {
+  display: flex; }
+
+.recent-posts {
+  width: 66%; }
+
+aside.category-sidebar {
+  width: 33%; }
+
+.recent-posts__subtitle {
+  margin-bottom: 30px; }
+
+.recent-posts__qa-container {
+  border: 1px solid #ccc;
+  display: flex; }
+
+.recent-posts__qa-thumbnail {
+  margin: 0; }
+  .recent-posts__qa-thumbnail > img.wp-post-image {
+    border-radius: 0; }
+
+.recent-posts__qa-text-container {
+  padding: 20px; }
+
+.recent-posts__qa-title {
+  font-size: 1.5em;
+  color: #01693A;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 5px; }
+
+.recent-posts__qa-date {
+  text-transform: uppercase;
+  color: #ccc; }
+
 html {
   box-sizing: border-box; }
 

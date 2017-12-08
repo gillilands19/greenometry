@@ -16,16 +16,14 @@
  * 
  **/
 ?>	
-		<?php $greenometry_qa_labels = get_post_type_object( 'question_answer' ); ?>
-		<section class="recent-posts">
-		recent-qa.php
-			<h1 class="recent-posts__heading">
-				<?php 
-				$greenometry_qa_labels = get_post_type_object( 'question_answer' );
-				echo 'Recent ' . $greenometry_qa_labels->labels->name;
-				?>
-			</h1>
-			<h4 class="recent-posts__subtitle"><?php echo $greenometry_qa_labels->description ?></h4>
+recent-qa.php
+<?php $greenometry_qa_labels = get_post_type_object( 'question_answer' ); ?>
+<section class="recent-posts">
+	<h2 class="recent-posts__heading"><?php echo 'Recent ' . $greenometry_qa_labels->labels->name; ?></h2>
+	<p class="recent-posts__subtitle"><?php echo $greenometry_qa_labels->description ?></p>
+
+	<section id="bottom">
+
 
 		<?php
 		//arguments list for Q&A query
@@ -51,10 +49,10 @@
 					<?php the_post_thumbnail(); ?>
 				</figure>
 				<div class="recent-posts__qa-text-container">
-					<h4 class="recent-posts__qa-category"><?php the_category( ', ' ); ?></h4>
+					<p class="recent-posts__qa-category"><?php the_category( ', ' ); ?></p>
 					<h2 class="recent-posts__qa-title"><?php the_title(); ?></h2>
 					<p class="recent-posts__qa-answer"><?php the_field( 'answer' ); ?></p>
-					<small class="recent-posts__qa-date">Posted: <?php the_time( 'F j, Y' ) ?></small>
+					<small class="recent-posts__qa-date">Posted <?php the_time( 'F j, Y' ) ?></small>
 					<?php //enter social menu here ?>
 				</div>
 			</div>
@@ -63,20 +61,19 @@
 
 			<div class="prev-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
 			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts' ); ?></div>
-	
+
 		<?php endif; ?>
 
-		</section>
 
-			<?php
-			//reset main query object
-			$wp_query = NULL;
-			$wp_query = $main_query_backup;
-			?>
+		<?php
+		//reset main query object
+		$wp_query = NULL;
+		$wp_query = $main_query_backup;
+		?>
 		<aside class="category-sidebar">
 			<ul class="categor-sidebar__item-list">
 				<?php 
-	
+
 				$qa_category_terms = get_terms( array( 'taxonomy' => 'question_answer_category', 'hide_empty' => false ) );
 				$site_url = get_site_url();
 				$site_url .= '/?question_answer_category=';
@@ -86,3 +83,5 @@
 				?>
 			</ul>
 		</aside>
+	</section> <!-- #bottom -->
+</section>
