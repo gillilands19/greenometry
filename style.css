@@ -10,7 +10,6 @@ Version: 1.0.0
 */
 
 @import 'css/style.css';
-@import 'css/wp-core.css';
 
 /*+++++++Content Page+++++++*/
 
@@ -134,7 +133,6 @@ a:link {
 /* visited link */
 a:visited {
     text-decoration: none;
-    color:white;
 }
 
 /*+++++++Support Page+++++++*/
@@ -218,3 +216,5 @@ img#collab {
     height: auto;
     text-align: center;
 }
+
+@import 'css/wp-core.css';

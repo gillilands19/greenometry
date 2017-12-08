@@ -69,7 +69,7 @@ p {
   margin: auto; }
 
 a {
-  font-family: Helvetica, sans-serif;
+  /*font-family: Helvetica, sans-serif;*/
   color: #01693A;
   text-decoration: none; }
   a:visited {

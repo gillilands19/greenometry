@@ -36,7 +36,7 @@ function greenometry_scripts_and_styles() {
 	wp_enqueue_script( 'font-awesome' );
 }
 
-add_action('init', 'greenometry_scripts_and_styles');
+add_action('wp_enqueue_scripts', 'greenometry_scripts_and_styles');
 
 /** 
  * Greenometry theme supports and registers
@@ -128,7 +128,7 @@ function custom_post_types() {
 		),
 		'public'		=> true,
 		'taxonomies'	=> array('category', 'post_tag'),
-		'supports'		=> array('title', 'thumbnail', 'custom-fields'),
+		'supports'		=> array('title', 'editor', 'thumbnail', 'custom-fields'),
 		'has_archive'	=> true,
 		'menu_position'	=> 20,
 		'menu_icon'		=> 'dashicons-groups'
@@ -143,7 +143,7 @@ function custom_post_types() {
 		'add_new_item'		=> __('Add New Publication')
 	),
 	'public'		=> true,
-	'supports'		=> array('title', 'custom-fields'),
+	'supports'		=> array('title'),
 	'has_archive'	=> true,
 	'menu_position'	=> 20,
 	'menu_icon'		=> 'dashicons-media-document'

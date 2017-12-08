@@ -6,13 +6,13 @@
  * @version 1.0 
  * 
  * 
- * TODO: Add classes to elements 
+ * TODO: 
  * put loop/query in function for abstraction
- * sidebar template for categories
+ * 
  * add pagination
  * add social menu links to each recent question
  * put query options in args array for abstraction
- * add QA categories to recent questions
+ * 
  * 
  **/
 ?>	

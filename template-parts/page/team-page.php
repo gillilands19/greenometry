@@ -30,9 +30,9 @@
         
       <div class="team-container__member-container">
 				<figure class="team-container__member-photo">
-					<?php the_post_thumbnail(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 				</figure>
-				<strong class="team-container__member-name"><?php the_title(); ?></strong>
+				<a href="<?php the_permalink(); ?>"><strong class="team-container__member-name"><?php the_title(); ?></strong></a>
 				<p class="team-container__member-titles">
 					<?php the_field( 'title' ); ?><br>
 					<?php the_field( 'title_two' ); ?>
