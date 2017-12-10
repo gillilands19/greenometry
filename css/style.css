@@ -69,7 +69,7 @@ p {
   margin: auto; }
 
 a {
-  /*font-family: Helvetica, sans-serif;*/
+  font-family: Helvetica, sans-serif;
   color: #01693A;
   text-decoration: none; }
   a:visited {
@@ -248,7 +248,7 @@ aside.category-sidebar {
   width: 33%; }
 
 .recent-posts__subtitle {
-  margin: 20px 0 30px;
+  margin: 15px 0;
   text-align: center;
   font-weight: 200; }
 
@@ -315,6 +315,13 @@ section {
 .v-pad5 {
   padding-top: 5%;
   padding-bottom: 5%; }
+
+hr {
+  width: 25%;
+  max-width: 300px;
+  border-top: 1px solid #000;
+  color: #fff;
+  margin-bottom: 50px; }
 
 .single-section {
   max-width: 940px;
