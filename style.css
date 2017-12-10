@@ -13,9 +13,11 @@ Version: 1.0.0
 
 /*+++++++Content Page+++++++*/
 
+/*
 .top-content {
     height: auto;
 }
+*/
 
 h1.top-content__heading{
     color: white;
@@ -35,14 +37,6 @@ h2.top-content__subtitle {
 
 .top-content__content{
     padding-bottom: 1%;
-}
-
-
-#sunset {
-    background-image: url(../greenometry/assets/sunset.jpg);
-    background-size: cover;
-    padding-top: 6%;
-    padding-bottom:8%;
 }
 
 .top-content__content > p {
