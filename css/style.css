@@ -238,7 +238,7 @@ footer > .donate-button {
   bottom: 10%;
   right: 0; }
 
-section#bottom {
+div#bottom-qa {
   display: flex; }
 
 .recent-posts {
@@ -248,7 +248,9 @@ aside.category-sidebar {
   width: 33%; }
 
 .recent-posts__subtitle {
-  margin-bottom: 30px; }
+  margin: 20px 0 30px;
+  text-align: center;
+  font-weight: 200; }
 
 .recent-posts__qa-container {
   border: 1px solid #ccc;
@@ -274,6 +276,27 @@ aside.category-sidebar {
 .recent-posts__qa-date {
   text-transform: uppercase;
   color: #ccc; }
+
+.category-sidebar {
+  margin-left: 20px; }
+
+.category-sidebar__title {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #01693A; }
+
+.category-sidebar__item-list {
+  list-style-type: none;
+  padding: 0; }
+  .category-sidebar__item-list li:not(:last-child) {
+    border-bottom: 1px solid #000; }
+  .category-sidebar__item-list li {
+    padding: 10px 0;
+    font-weight: 600; }
+    .category-sidebar__item-list li a {
+      color: #000; }
 
 html {
   box-sizing: border-box; }
