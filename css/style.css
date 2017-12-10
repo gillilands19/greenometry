@@ -238,6 +238,66 @@ footer > .donate-button {
   bottom: 10%;
   right: 0; }
 
+div#bottom-qa {
+  display: flex; }
+
+.recent-posts {
+  width: 66%; }
+
+aside.category-sidebar {
+  width: 33%; }
+
+.recent-posts__subtitle {
+  margin: 20px 0 30px;
+  text-align: center;
+  font-weight: 200; }
+
+.recent-posts__qa-container {
+  border: 1px solid #ccc;
+  display: flex; }
+
+.recent-posts__qa-thumbnail {
+  margin: 0; }
+  .recent-posts__qa-thumbnail > img.wp-post-image {
+    border-radius: 0; }
+
+.recent-posts__qa-text-container {
+  padding: 20px; }
+
+.recent-posts__qa-title {
+  font-size: 1.5em;
+  color: #01693A;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 5px; }
+
+.recent-posts__qa-date {
+  text-transform: uppercase;
+  color: #ccc; }
+
+.category-sidebar {
+  margin-left: 20px; }
+
+.category-sidebar__title {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #01693A; }
+
+.category-sidebar__item-list {
+  list-style-type: none;
+  padding: 0; }
+  .category-sidebar__item-list li:not(:last-child) {
+    border-bottom: 1px solid #000; }
+  .category-sidebar__item-list li {
+    padding: 10px 0;
+    font-weight: 600; }
+    .category-sidebar__item-list li a {
+      color: #000; }
+
 html {
   box-sizing: border-box; }
 
