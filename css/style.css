@@ -81,7 +81,10 @@ a {
 #greeter {
   background: url("../assets/wind.jpg");
   min-height: 40vh;
-  background-size: cover; }
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
   #greeter .top-content__heading {
     text-shadow: 2px 2px 8px #999;
     margin-bottom: 40px; }
