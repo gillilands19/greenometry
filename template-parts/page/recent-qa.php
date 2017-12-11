@@ -28,7 +28,6 @@
 			</h1>
 			<h4 class="recent-posts__subtitle"><?php echo $greenometry_qa_labels->description; ?></h4>
 			<hr>
-			<?php echo do_shortcode('[contact-form-7 id="94"]'); ?>
 
 		<?php
 		//arguments list for Q&A query
