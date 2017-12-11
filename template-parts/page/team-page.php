@@ -12,8 +12,6 @@
  * 
  **/
 ?>		
-		team-page.php
-
 		<?php $greenometry_team_labels = get_post_type_object( 'team_members' );  ?>
 
 		<section class="team-container">            
@@ -22,29 +20,26 @@
 			$greenometry_team_labels = get_post_type_object( 'team_members' ); 
 			echo $greenometry_team_labels->labels->name; ?>
 			</h1>
-            
 			<?php
-			$greenometry_team = new WP_Query( array( 'post_type' => 'team_members' ) );
+			$greenometry_team = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			if ( $greenometry_team->have_posts() ) : while ( $greenometry_team->have_posts() ) : $greenometry_team->the_post();
-			?>
-        
-      <div class="team-container__member-container">
+			?> 
+      		<div class="team-container__member-container">
 				<figure class="team-container__member-photo">
-					<?php the_post_thumbnail(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 				</figure>
-				<strong class="team-container__member-name"><?php the_title(); ?></strong>
+				<a href="<?php the_permalink(); ?>"><strong class="team-container__member-name"><?php the_title(); ?></strong></a>
 				<p class="team-container__member-titles">
 					<?php the_field( 'title' ); ?><br>
 					<?php the_field( 'title_two' ); ?>
 				</p>
 			</div>
-
 			<?php endwhile; endif; ?>
             
             <br><br>
             
-			<button class="team-container__directors"><a href="#">Board of Directors</a></button>
+			<!--<button class="team-container__directors"><a href="#">Board of Directors</a></button>-->
             
-            <button class="team-container__advisory"><a href="#">Advisory Council</a></button>
+           <!-- <button class="team-container__advisory"><a href="#">Advisory Council</a></button>-->
 		
 		</section>

@@ -14,8 +14,12 @@ Version: 1.0.0
 
 /*+++++++Content Page+++++++*/
 
+
 .top-content {
     height: auto;
+    width: inherit;
+    background-position: center top;
+    background-size: auto auto;
 }
 
 h1.top-content__heading{
@@ -27,7 +31,7 @@ h2.top-content__subtitle {
     color: white;
     text-shadow: 2px 2px 8px black;
     line-height: 1.5;
-    max-width: 700px;
+    max-width: 1400px;
     margin: auto;
     padding-bottom: 2%;
     font-family: Helvetica, sans-serif;
@@ -38,21 +42,14 @@ h2.top-content__subtitle {
     padding-bottom: 1%;
 }
 
-
-#sunset {
-    background-image: url(../greenometry/assets/sunset.jpg);
-    background-size: cover;
-    padding-top: 6%;
-    padding-bottom:8%;
-}
-
 .top-content__content > p {
     color: white;
     text-shadow: 2px 2px 8px black;
     line-height: 1.5;
-    max-width: 700px;
+    max-width: 940px;
     margin: auto;
     padding: 1%;
+    font-size: 1.4em;
 }
 
 
@@ -63,12 +60,15 @@ h2.top-content__subtitle {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 .team-container__heading {
     padding-top: 5%;
     padding-bottom: 5%;
+    flex-basis: 100%;
 }
 
 
@@ -134,7 +134,6 @@ a:link {
 /* visited link */
 a:visited {
     text-decoration: none;
-    color:white;
 }
 
 /*+++++++Support Page+++++++*/
@@ -217,4 +216,51 @@ img#collab {
     width: 200px;
     height: auto;
     text-align: center;
+}
+
+/*+++++++Resources Page+++++++*/
+
+.heading-container {
+    padding:
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%
+}
+
+.posts-container__post-type-heading {
+    font-size: 2.75em;
+    flex-basis: 100%;
+}
+
+.posts-container__all-posts-link {
+    flex-basis: 100%;
+    text-align: right;
+    font-size: 1.15em;
+}
+
+.posts-container__post-container {
+    width: 30%;
+    padding: 1.66%;
+}
+
+.posts-container__post-thumbnail {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.posts-container__post-thumbnail img {
+    height: auto;
+    border-radius: 0;
+    max-width: 90%;
+}
+
+.posts-container__post-container h3 {
+    max-width: 90%;
+}
+
+.posts-container__post-container p {
+    max-width: 90%;
 }

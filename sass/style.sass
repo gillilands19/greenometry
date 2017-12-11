@@ -4,6 +4,7 @@
 @import front-page
 @import _header
 @import _footer
+@import _qa
 
 html
 	box-sizing: border-box
@@ -22,6 +23,13 @@ section
 .v-pad5
 	padding-top: 5%
 	padding-bottom: 5%
+
+hr 
+	width: 25%
+	max-width: 300px
+	border-top: 1px solid #000
+	color: #fff
+	margin-bottom: 50px
 
 // Single Section (Contact, Donate)
 .single-section
@@ -52,8 +60,9 @@ span.wpcf7-list-item-label
 	max-width: 940px
 	margin: auto
 
-#wpcf7-f92-p33-o1 > .wpcf7-form > p 
-	display: flex
+// Main Contact Form
+#wpcf7-f4-p76-o1 > form > span > input, #wpcf7-f4-p120-o1 > form > span > input
+	margin-bottom: 20px
 
 // Footer Contact
 #wpcf7-f95-o3 > form p
