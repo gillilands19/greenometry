@@ -19,12 +19,12 @@
 
 get_header();
 ?>
-		page-resources.php
 		<section class="posts-container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			<h1 class="posts-container__heading"><?php the_title(); ?></h1>
 			<h4 class="posts-container__subtitle"><?php the_field( 'resources_subtitle' ); ?></h4>
+			<hr>
 
 		<?php endwhile; endif; ?>
 		</section>

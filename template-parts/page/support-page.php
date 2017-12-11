@@ -13,10 +13,6 @@
  **/
 ?>		
 
-
-
-
-		support-page.php
 		<section class="support-container">
 		
 			<h1 class="support-container__heading">Support Us</h1>
