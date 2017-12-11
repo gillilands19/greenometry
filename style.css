@@ -18,6 +18,8 @@ Version: 1.0.0
 .top-content {
     height: auto;
     width: inherit;
+    background-position: center;
+    background-size: auto auto;
 }
 
 h1.top-content__heading{
