@@ -136,33 +136,81 @@ header.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    header.main-header {
+      flex-direction: column;
+      align-items: flex-start; } }
   header.main-header figure {
     align-self: flex-start;
     margin-left: 20px; }
     header.main-header figure img {
       max-width: 300px !important;
       height: auto; }
-  @media (max-width: 68.75em) {
-    header.main-header button {
-      display: none; } }
+      @media (max-width: 68.75em) {
+        header.main-header figure img {
+          max-width: 200px !important; } }
+
+#mobile-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 56.25em) {
+    #mobile-navigation {
+      width: 100%; } }
+
+#menu-icons {
+  display: none;
+  font-size: 3em; }
+  @media (max-width: 56.25em) {
+    #menu-icons {
+      display: inline; } }
+
+#navigation-container {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end; }
+  @media (max-width: 56.25em) {
+    #navigation-container {
+      display: none;
+      justify-content: flex-start;
+      width: 40%;
+      flex-direction: column; } }
+  @media (max-width: 37.5em) {
+    #navigation-container {
+      width: 75%; } }
+  @media (max-width: 25em) {
+    #navigation-container {
+      width: 100%; } }
+  #navigation-container button {
+    margin-bottom: 20px; }
 
 #nav-links {
   display: flex; }
 
 nav.main-header__nav {
   display: flex;
-  flex-grow: 2;
   justify-content: flex-end; }
+  @media (max-width: 56.25em) {
+    nav.main-header__nav {
+      justify-content: flex-start; } }
 
 ul.main-header__nav-list {
   display: flex;
   list-style-type: none;
-  justify-content: space-between; }
-  @media (max-width: 62.5em) {
+  justify-content: space-between;
+  align-items: stretch;
+  padding-left: 0; }
+  @media (max-width: 56.25em) {
     ul.main-header__nav-list {
       flex-direction: column; } }
   ul.main-header__nav-list li {
     padding-left: 20px; }
+    @media (max-width: 56.25em) {
+      ul.main-header__nav-list li {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 200; } }
     ul.main-header__nav-list li a {
       text-decoration: none;
       color: #000;
@@ -171,13 +219,6 @@ ul.main-header__nav-list {
         color: #000; }
       ul.main-header__nav-list li a:hover {
         border-bottom: 2px solid #000; }
-
-#menu-icons {
-  display: none;
-  font-size: 2em; }
-  @media (max-width: 68.75em) {
-    #menu-icons {
-      display: inline; } }
 
 footer {
   display: grid;
@@ -210,6 +251,9 @@ footer {
   #wpcf7-f95-o1 > form input[type="submit"], #wpcf7-f95-o2 > form input[type="submit"], #wpcf7-f95-o3 > form input[type="submit"] {
     background-color: #3B5998;
     border-color: #3B5998; }
+    #wpcf7-f95-o1 > form input[type="submit"]:hover, #wpcf7-f95-o2 > form input[type="submit"]:hover, #wpcf7-f95-o3 > form input[type="submit"]:hover {
+      background-color: #6096C2;
+      border-color: #6096C2; }
 
 .footer__nav {
   display: flex;
@@ -228,6 +272,8 @@ i {
 
 .icon-background {
   color: #6096C2; }
+  .icon-background:focus {
+    color: #3B5998; }
 
 footer > .donate-button {
   position: absolute;

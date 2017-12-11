@@ -12,9 +12,7 @@
  * 
  **/
 ?>
-
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<!-- STOP! before adding anything to the head, check the functions.php file and see if it is
@@ -25,30 +23,31 @@
 	</head>	
 	<body>
 		<header class="main-header">
-			<figure class="main-header__logo">
-				<?php the_custom_logo(); ?>
-			</figure>
+			<div id="mobile-navigation">
+				<!-- Logo -->
+				<figure class="main-header__logo">
+					<?php the_custom_logo(); ?>
+				</figure>
 
-			<?php 
-			wp_nav_menu( array(
-				'theme_location' 		=> 'main-menu',
-				'container'				=> 'nav',
-				'container_class'		=> 'main-header__nav',
-				'items_wrap'			=> '<ul class="main-header__nav-list %2$s">%3$s</ul>',
-				)
-			); 
-			?>
-			<button class="donate-button">Donate</button>
+				<!-- Mobile Menu Icons -->
+				<div id="menu-icons">
+					<span id="open">
+						&#9776;
+					</span> <!-- #open -->
 
-			<div id="menu-icons">
-				<span id="open">
-					&#9776;
-				</span> <!-- #open -->
+					<span id="close">
+						&#10006;
+					</span> <!-- #close -->
+				</div> <!-- #menu-icons -->
+			</div><!-- #mobile-navigation -->
+			
+			<div id="navigation-container">
+				<!-- Main Navigation -->
+				<?php wp_nav_menu( array('theme_location' => 'main-menu','container' => 'nav','container_class' => 'main-header__nav','items_wrap' => '<ul class="main-header__nav-list %2$s">%3$s</ul>')); ?>
 
-				<span id="close">
-					&#10006;
-				</span> <!-- #close -->
-			</div> <!-- #menu-icons -->
+				<!-- Donate Button -->
+				<button class="donate-button">Donate</button>
+			</div><!-- #navigation-container -->
 
 		</header>
 	

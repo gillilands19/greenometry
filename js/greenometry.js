@@ -5,7 +5,7 @@ jQuery( document ).ready( function( $ ) {
 		$('#menu-icons').click(function(){
 			$('#open').toggle();
 			$('#close').toggle();
-			$('nav.main-header__nav').toggle();
+			$('#navigation-container').toggle();
 		});
 	}
 );
