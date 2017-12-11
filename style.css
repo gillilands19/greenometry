@@ -242,6 +242,15 @@ img#collab {
 }
 
 .posts-container__post-container {
-    width: 33%;
-    padding: 2.5%;
+    width: 30%;
+    padding: 1.66%;
+}
+
+.posts-container__post-thumbnail {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.posts-container__post-thumbnail img {
+    height: auto;
 }
