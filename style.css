@@ -220,6 +220,10 @@ img#collab {
 
 /*+++++++Resources Page+++++++*/
 
+.heading-container {
+    padding:
+}
+
 .posts-container {
     display: flex;
     flex-wrap: wrap;
@@ -237,7 +241,7 @@ img#collab {
     font-size: 1.15em;
 }
 
-.posts-container_post-container {
+.posts-container__post-container {
     width: 33%;
     padding: 2.5%;
 }
