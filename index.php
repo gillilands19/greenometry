@@ -14,9 +14,9 @@
  get_header();
  ?>
 		index.php
-		<section class="posts-container">
-			<h1 class="posts-container__heading">Recent Articles &amp; Posts</h1>
-			<h4 class="posts-container__subtitle">Subtitle</h4>
+		<section class="heading-container">
+			<h1 class="heading-container__heading">Recent Articles &amp; Posts</h1>
+			<h4 class="heading-container__subtitle">Subtitle</h4>
 		<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<div class="posts-container__post-container">
