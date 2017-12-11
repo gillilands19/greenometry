@@ -10,14 +10,18 @@ Version: 1.0.0
 */
 
 @import 'css/style.css';
+@import 'css/wp-core.css';
 
 /*+++++++Content Page+++++++*/
 
-/*
+
 .top-content {
     height: auto;
+    width: inherit;
+    background-position: center top;
+    background-size: auto auto;
+    padding: 12% 2%;
 }
-*/
 
 h1.top-content__heading{
     color: white;
@@ -28,7 +32,7 @@ h2.top-content__subtitle {
     color: white;
     text-shadow: 2px 2px 8px black;
     line-height: 1.5;
-    max-width: 700px;
+    max-width: 1400px;
     margin: auto;
     padding-bottom: 2%;
     font-family: Helvetica, sans-serif;
@@ -57,12 +61,15 @@ h2.top-content__subtitle {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 .team-container__heading {
     padding-top: 5%;
     padding-bottom: 5%;
+    flex-basis: 100%;
 }
 
 
@@ -212,4 +219,30 @@ img#collab {
     text-align: center;
 }
 
-@import 'css/wp-core.css';
+/*+++++++Resources Page+++++++*/
+
+.heading-container {
+    padding:
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%
+}
+
+.posts-container__post-type-heading {
+    font-size: 2.75em;
+    flex-basis: 100%;
+}
+
+.posts-container__all-posts-link {
+    flex-basis: 100%;
+    text-align: right;
+    font-size: 1.15em;
+}
+
+.posts-container__post-container {
+    width: 33%;
+    padding: 2.5%;
+}
