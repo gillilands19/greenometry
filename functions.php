@@ -71,6 +71,11 @@ function greenometry_theme_supports() {
 }
 add_action( 'after_setup_theme', 'greenometry_theme_supports' );
 
+function custom_excerpt_length( $length ) {
+    return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 /**
  * Add categories and tags to Page post-type 
