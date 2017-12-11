@@ -19,7 +19,6 @@
 
 get_header();
 ?>
-		page-resources.php
 		<section class="posts-container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
