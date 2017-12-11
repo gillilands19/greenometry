@@ -13,10 +13,11 @@
 
  get_header();
  ?>
-		index.php
 		<section class="heading-container">
 			<h1 class="heading-container__heading">Recent Articles &amp; Posts</h1>
 			<h4 class="heading-container__subtitle">Subtitle</h4>
+
+		<section class="posts-container">
 		<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<div class="posts-container__post-container">
@@ -29,6 +30,8 @@
 			</div>
 
 		<?php endwhile; ?>
+		
+		</section>
 
 			<div class="previous-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
 			<div class="next-posts-link"><?php next_posts_link( 'Newer Posts >' ); ?></div>
