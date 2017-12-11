@@ -22,7 +22,6 @@
 			$greenometry_team_labels = get_post_type_object( 'team_members' ); 
 			echo $greenometry_team_labels->labels->name; ?>
 			</h1>
-            <section class="team-container__member-wrapper">
 			<?php
 			$greenometry_team = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			if ( $greenometry_team->have_posts() ) : while ( $greenometry_team->have_posts() ) : $greenometry_team->the_post();
@@ -38,8 +37,6 @@
 				</p>
 			</div>
 			<?php endwhile; endif; ?>
-
-		</section>
             
             <br><br>
             

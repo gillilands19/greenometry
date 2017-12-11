@@ -10,14 +10,14 @@ Version: 1.0.0
 */
 
 @import 'css/style.css';
+@import 'css/wp-core.css';
 
 /*+++++++Content Page+++++++*/
 
-/*
+
 .top-content {
     height: auto;
 }
-*/
 
 h1.top-content__heading{
     color: white;
@@ -56,12 +56,15 @@ h2.top-content__subtitle {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 .team-container__heading {
     padding-top: 5%;
     padding-bottom: 5%;
+    flex-basis: 100%;
 }
 
 
@@ -210,5 +213,3 @@ img#collab {
     height: auto;
     text-align: center;
 }
-
-@import 'css/wp-core.css';
