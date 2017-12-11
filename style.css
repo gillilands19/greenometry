@@ -255,3 +255,7 @@ img#collab {
     height: auto;
     border-radius: 0;
 }
+
+.posts-container__post-container img h3 p {
+    max-width: 90%;
+}
