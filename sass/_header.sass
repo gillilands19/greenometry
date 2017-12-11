@@ -8,8 +8,9 @@ header.main-header
 	display: flex
 	justify-content: space-between
 	align-items: center
-	@include forSmallScreens(1000)
+	@include forSmallScreens(900)
 		flex-direction: column
+		align-items: flex-start
 	figure
 		align-self: flex-start
 		margin-left: 20px
@@ -18,21 +19,65 @@ header.main-header
 			max-width: 300px 
 			height: auto
 			@include forSmallScreens(1100)
-				max-width: 200px 
+				max-width: 200px !important
 
-// Nav
-nav.main-header__nav
+// Mobile Navigation Container (Logo + Mobile Menu Icons)
+#mobile-navigation
+	display: flex
+	justify-content: space-between
+	align-items: center
+	@include forSmallScreens(900)
+		width: 100%
+
+// Mobile Menu Icons will appear < 1100px
+#menu-icons
+	display: none
+	font-size: 3em
+	@include forSmallScreens(900)
+		display: inline
+
+
+// Navigation Container (Nav + Donate Button)
+#navigation-container
 	display: flex 
 	flex-grow: 2
 	justify-content: flex-end
+	@include forSmallScreens(900)
+		display: none
+		justify-content: flex-start
+		width: 40%
+		flex-direction: column
+	@include forSmallScreens(600)
+		width: 75%
+	@include forSmallScreens(400)
+		width: 100%
+	button
+		margin-bottom: 20px
+
+// Nav
+#nav-links
+	display: flex
+
+nav.main-header__nav
+	display: flex 
+	justify-content: flex-end
+	@include forSmallScreens(900)
+		justify-content: flex-start
 ul.main-header__nav-list
 	display: flex
 	list-style-type: none
 	justify-content: space-between
-	@include forSmallScreens(1000)
+	align-items: stretch
+	padding-left: 0
+	@include forSmallScreens(900)
 		flex-direction: column
 	li
 		padding-left: 20px
+		@include forSmallScreens(900)
+			font-size: 1.3em
+			margin-bottom: 20px
+			text-transform: uppercase
+			font-weight: 200
 		a
 			text-decoration: none
 			color: #000
@@ -41,6 +86,7 @@ ul.main-header__nav-list
 				color: #000
 			&:hover
 				border-bottom: 2px solid #000
+
 
 
 

@@ -32,8 +32,12 @@ add_action('wp_head', 'add_meta_title_tags');
 function greenometry_scripts_and_styles() {
 	wp_register_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_style( 'style' );
+
 	wp_register_script( 'font-awesome', 'https://use.fontawesome.com/84801a31cc.js' );
 	wp_enqueue_script( 'font-awesome' );
+
+	wp_register_script( 'greenometry', '/wp-content/themes/greenometry/js/greenometry.js', array('jquery') );
+	wp_enqueue_script( 'greenometry' );
 }
 
 add_action('wp_enqueue_scripts', 'greenometry_scripts_and_styles');
