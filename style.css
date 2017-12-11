@@ -253,4 +253,5 @@ img#collab {
 
 .posts-container__post-thumbnail img {
     height: auto;
+    border-radius: 0;
 }
