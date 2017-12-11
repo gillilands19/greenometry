@@ -254,8 +254,13 @@ img#collab {
 .posts-container__post-thumbnail img {
     height: auto;
     border-radius: 0;
+    max-width: 90%;
 }
 
-.posts-container__post-container img h3 p {
+.posts-container__post-container h3 {
+    max-width: 90%;
+}
+
+.posts-container__post-container p {
     max-width: 90%;
 }
