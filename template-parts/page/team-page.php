@@ -12,8 +12,6 @@
  * 
  **/
 ?>		
-		team-page.php
-
 		<?php $greenometry_team_labels = get_post_type_object( 'team_members' );  ?>
 
 		<section class="team-container">            

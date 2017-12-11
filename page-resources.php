@@ -24,6 +24,7 @@ get_header();
 
 			<h1 class="posts-container__heading"><?php the_title(); ?></h1>
 			<h4 class="posts-container__subtitle"><?php the_field( 'resources_subtitle' ); ?></h4>
+			<hr>
 
 		<?php endwhile; endif; ?>
 		</section>
