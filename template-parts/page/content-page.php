@@ -15,7 +15,7 @@
 		<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 
 		<section class="top-content v-pad5" style="background-image:url('<?php echo $background[0]; ?>')">
-			content-page.php
+		
 			<h1 class="top-content__heading"><?php the_title(); ?></h1>
             
             
