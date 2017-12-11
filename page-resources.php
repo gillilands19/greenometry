@@ -19,7 +19,7 @@
 
 get_header();
 ?>
-		<section class="posts-container">
+		<section class="heading-container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			<h1 class="posts-container__heading"><?php the_title(); ?></h1>
