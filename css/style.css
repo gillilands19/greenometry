@@ -350,7 +350,7 @@ span.wpcf7-list-item-label {
   max-width: 940px;
   margin: auto; }
 
-#wpcf7-f4-p76-o1 > form > span > input {
+#wpcf7-f4-p76-o1 > form > span > input, #wpcf7-f4-p120-o1 > form > span > input {
   margin-bottom: 20px; }
 
 #wpcf7-f95-o3 > form p {
