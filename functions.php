@@ -79,7 +79,7 @@ function greenometry_theme_supports() {
 add_action( 'after_setup_theme', 'greenometry_theme_supports' );
 
 function custom_excerpt_length( $length ) {
-    return 50;
+    return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

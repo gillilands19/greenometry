@@ -15,9 +15,12 @@
  ?>
 		<section class="heading-container">
 			<h1 class="heading-container__heading">Recent Articles &amp; Posts</h1>
-			<h4 class="heading-container__subtitle">Subtitle</h4>
+			<h4 class="heading-container__subtitle">Greenometry Insights</h4>
+			<hr>
+		</section>
 
 		<section class="posts-container">
+		<section class="posts-container__single-wrapper">
 		<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<div class="posts-container__post-container">
@@ -30,7 +33,7 @@
 			</div>
 
 		<?php endwhile; ?>
-		
+		</section>
 		</section>
 
 			<div class="previous-posts-link"><?php previous_posts_link( '< Older Posts' ); ?></div>
