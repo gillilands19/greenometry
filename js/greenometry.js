@@ -2,10 +2,24 @@ jQuery( document ).ready( function( $ ) {
 
 		$('#close').hide();
 
-		$('#menu-icons').click(function(){
-			$('#open').toggle();
-			$('#close').toggle();
-			$('#navigation-container').toggle();
+		const navElem = [$('#open'), $('#close'), $('#navigation-container')];
+
+		$('#menu-icons').click(function() {
+			if($(window).width() < 900) {
+				navElem.forEach(elem => elem.toggle());
+		}
 		});
-	}
-);
+
+		$(window).on('resize', () => {
+			if($(window).width() > 900) {
+				navElem.forEach(elem => elem.toggle());
+				$('#navigation-container').show();
+			} else {
+				$('#navigation-container').hide();
+				$('#close').hide();
+				$('#open').show();
+			}
+		})
+
+	});
+

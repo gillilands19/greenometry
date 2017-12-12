@@ -17,6 +17,11 @@ Version: 1.0.0
     width:100%;
     margin: 0 25px;
 }
+    @media (max-width: 56.25em) {
+        .donate-anchor .donate-button {
+            width: 35%;
+    }
+}
 
 .donate-anchor-footer .donate-button {
     width:80%;

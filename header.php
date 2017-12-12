@@ -23,11 +23,13 @@
 	</head>	
 	<body>
 		<header class="main-header">
-			<div id="mobile-navigation">
+			
 				<!-- Logo -->
 				<figure class="main-header__logo">
 					<?php the_custom_logo(); ?>
 				</figure>
+
+				<div id="mobile-navigation">
 
 				<!-- Mobile Menu Icons -->
 				<div id="menu-icons">
