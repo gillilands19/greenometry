@@ -13,7 +13,6 @@ Version: 1.0.0
 @import 'css/wp-core.css';
 @import 'css/give.plugin.css';
 
-<<<<<<< HEAD
 .donate-anchor .donate-button {
     width:100%;
     margin: 0 25px;
@@ -34,8 +33,6 @@ Version: 1.0.0
     margin: 50px auto;
 }
 
-=======
->>>>>>> ad49051703491648996c52b4cba8b14f5644b93a
 /*+++++++Content Page+++++++*/
 
 
@@ -329,4 +326,47 @@ img#collab {
     font-size: 1em;
     color: #fff;
     background-color: #ffc86d;
+}
+
+
+/*+++++++Resources Page & Index Template+++++++*/
+
+.single-post-container {
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.single-post-container__single-heading {
+    font-size: 3em;
+    margin-bottom: 2%;
+}
+
+.single-post-container__single-details-container {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.single-post-container__single-content {
+    max-width: 940px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.single-post-container__post-thumbnail {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 940px;
+    margin-bottom: 3em;
+}
+
+.single-post-container__post-thumbnail img {
+    width: 100%;
+    height: auto;
+    max-width: 940px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.single-post-container__single-content p {
+    margin: 1em auto;
 }
