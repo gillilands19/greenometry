@@ -14,10 +14,12 @@
  **/
 ?>
 <?php get_header(); ?>
+		
+		<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<section id="greeter" class="top-content v-pad10 ">
+		<section id="greeter" class="top-content v-pad10" style="background-image:url('<?php echo $background[0]; ?>')">
 			<h1 class="top-content__heading"><?php  the_field( 'tagline' );  ?></h1>
 			<button class="top-content__button button">Learn More</button>
 		</section>

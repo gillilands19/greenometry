@@ -1,13 +1,25 @@
+@import mixins
+
 #greeter
-	background: url('../assets/wind.jpg')
-	min-height: 40vh
+	min-height: 50vh
 	background-size: cover
+	display: flex
+	justify-content: center 
+	align-items: center 
+	flex-direction: column
 	.top-content__heading
 		text-shadow: 2px 2px 8px #999
 		margin-bottom: 40px
+		@include forSmallScreens(1100)
+			font-size: 3.7em
+		@include forSmallScreens(720)
+			font-size: 3em
+		@include forSmallScreens(475)
+			font-size: 2em
 
 .top-content__button
 	box-shadow: -1px 2px 10px #333
+	height: 65px
 
 // +++++++++ Mailing List Promo ++++++++ //
 .subscribe-front
