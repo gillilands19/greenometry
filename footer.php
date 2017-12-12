@@ -34,11 +34,9 @@
 				
 			</div>
 
-			<a class="donate-link" href="<?php echo get_site_url() ?>/donate"><button class="donate-button">Donate</button></a>
+			<a class="donate-anchor-footer" href="<?php echo get_site_url() ?>/donate"><button class="donate-button">Donate</button></a>
 		</footer>
 
 	<?php wp_footer(); ?> 
 	</body>
 </html>
-
-You were linking buttons and troubleshooting their styling!!!
