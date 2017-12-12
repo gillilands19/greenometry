@@ -167,11 +167,11 @@ header.main-header {
   max-width: 1400px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
   @media (max-width: 57.8125em) {
     header.main-header {
+      flex-direction: column;
       align-items: flex-start; } }
   header.main-header figure {
     align-self: flex-start;
@@ -185,12 +185,12 @@ header.main-header {
           max-width: 200px !important; } }
 
 #mobile-navigation {
-  visibility: hidden;
+  display: flex;
   justify-content: space-between;
   align-items: center; }
   @media (max-width: 57.8125em) {
     #mobile-navigation {
-      visibility: visible; } }
+      width: 100%; } }
 
 #menu-icons {
   display: none;
@@ -208,8 +208,6 @@ header.main-header {
     #navigation-container {
       display: none;
       justify-content: flex-start;
-      align-self: flex-start;
-      flex-basis: 100%;
       width: 40%;
       flex-direction: column; } }
   @media (max-width: 37.5em) {
@@ -218,11 +216,10 @@ header.main-header {
   @media (max-width: 25em) {
     #navigation-container {
       width: 100%; } }
-  #navigation-container a.donate-button {
-    margin-bottom: 20px; }
-    @media (max-width: 57.8125em) {
-      #navigation-container a.donate-button {
-        width: 80%; } }
+  @media (max-width: 57.8125em) {
+    #navigation-container a.donate-button {
+      width: 80%;
+      margin-bottom: 20px; } }
 
 #nav-links {
   display: flex; }
@@ -442,6 +439,10 @@ section {
 .v-pad10 {
   padding-top: 10%;
   padding-bottom: 10%; }
+
+.v-pad5 {
+  padding-top: 5%;
+  padding-bottom: 5%; }
 
 .v-pad-small {
   padding-top: 7%;
