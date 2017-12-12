@@ -1,4 +1,4 @@
-.button, .donate-button, .inline {
+.button, .donate-button, .resource-button, .inline {
   padding: 2% 5%;
   display: block;
   font-size: 1em;
@@ -8,11 +8,11 @@
   color: #fff;
   border-radius: 0;
   box-shadow: -5px 5px 10px #ddd; }
-  .button:visited, .donate-button:visited, .inline:visited {
+  .button:visited, .donate-button:visited, .resource-button:visited, .inline:visited {
     color: #fff; }
-  .button:focus, .donate-button:focus, .inline:focus {
+  .button:focus, .donate-button:focus, .resource-button:focus, .inline:focus {
     outline: none; }
-  .button:hover, .donate-button:hover, .inline:hover {
+  .button:hover, .donate-button:hover, .resource-button:hover, .inline:hover {
     background-color: #FFB63C;
     border-color: #FFB63C; }
 
@@ -27,6 +27,12 @@
   box-shadow: none;
   height: 50px;
   line-height: 50px;
+  text-align: center; }
+
+.resource-button {
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
   text-align: center; }
 
 .inline {
