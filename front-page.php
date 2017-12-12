@@ -22,7 +22,7 @@
 			<button class="top-content__button button">Learn More</button>
 		</section>
 		
-		<section class="subscribe-front v-pad5">
+		<section class="subscribe-front v-pad-small">
 			<h4 class="subscribe-front__heading"><?php the_field( 'subscribe_heading' ); ?></h4>
 			<div class="subscribe-front__form-container"><?php echo do_shortcode('[contact-form-7 id="92"]'); ?></div>
 		</section>
@@ -51,7 +51,7 @@
 			<?php endwhile; endif; ?>
 		</section>
 
-		<section class="ask-front v-pad5">
+		<section class="ask-front v-pad-small">
 			<h2 class="ask-front__heading">Ask Greenometry</h2>
 			<p class="ask-front__sub-heading">You have the questions and we have the data!<br>Send us your questions and we will provide the answers.</p>
 			<?php echo do_shortcode('[contact-form-7 id="94"]'); ?>

@@ -46,7 +46,7 @@
 				<?php wp_nav_menu( array('theme_location' => 'main-menu','container' => 'nav','container_class' => 'main-header__nav','items_wrap' => '<ul class="main-header__nav-list %2$s">%3$s</ul>')); ?>
 
 				<!-- Donate Button -->
-				<a class="donate-anchor" href="<?php echo get_site_url() ?>/donate"><button class="donate-button">Donate</button></a>
+				<a class="donate-button" href="<?php echo get_site_url(); ?>/donate">Donate</a>
 			</div><!-- #navigation-container -->
 
 		</header>

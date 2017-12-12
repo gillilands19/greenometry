@@ -13,21 +13,6 @@ Version: 1.0.0
 @import 'css/wp-core.css';
 @import 'css/give.plugin.css';
 
-.donate-anchor .donate-button {
-    width:100%;
-    margin: 0 25px;
-}
-
-.donate-anchor-footer .donate-button {
-    width:80%;
-    margin: 20% auto 0;
-
-}
-
-.footer {
-    margin: 50px auto;
-}
-
 /*+++++++Content Page+++++++*/
 
 
