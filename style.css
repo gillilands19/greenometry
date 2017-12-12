@@ -172,7 +172,7 @@ a:visited {
 
 /*+++++++Support Page+++++++*/
 
-.support-container{
+.support-container {
     padding-top: 5%;
     padding-bottom: 6%;
     background-color: #6096C2;
@@ -183,6 +183,12 @@ h1.support-container__heading {
     color: white;
     text-shadow: 2px 2px 8px black;
     margin-bottom: 40px;
+}
+
+#support-container__options {
+    display: flex;
+    max-width: 940px;
+    margin: auto;
 }
 
 h3.support-container__item-heading {
