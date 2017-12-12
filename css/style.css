@@ -378,7 +378,8 @@ hr {
 
 .single-section {
   max-width: 940px;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 10%; }
 
 .single-section__heading {
   color: #01693A; }
