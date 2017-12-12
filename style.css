@@ -249,6 +249,7 @@ img#collab {
 .posts-container__post-thumbnail {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .posts-container__post-thumbnail img {
