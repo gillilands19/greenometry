@@ -219,7 +219,7 @@ header.main-header {
   @media (max-width: 57.8125em) {
     #navigation-container a.donate-button {
       width: 80%;
-      margin-bottom: 20px; } }
+      margin: 0 auto 20px; } }
 
 #nav-links {
   display: flex; }
