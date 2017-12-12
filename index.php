@@ -29,7 +29,7 @@
 				</figure>
 				<h3 class="posts-container__post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<p class="posts-container__post-excerpt"><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>"><button class="posts-container__more-link">Read More</button></a>
+				<a href="<?php the_permalink(); ?>" class="resource-button">Read More</a>
 			</div>
 
 		<?php endwhile; ?>

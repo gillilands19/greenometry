@@ -19,7 +19,7 @@
 
 		<?php $greenometry_qa_labels = get_post_type_object( 'question_answer' ); ?>
 
-		<section class="recent-posts v-pad5">
+		<section class="recent-posts v-pad-small">
 			<h1 class="recent-posts__heading">
 				<?php 
 				$greenometry_qa_labels = get_post_type_object( 'question_answer' );

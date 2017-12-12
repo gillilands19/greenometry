@@ -34,7 +34,7 @@
 				
 			</div>
 
-			<a class="donate-anchor-footer" href="<?php echo get_site_url() ?>/donate"><button class="donate-button">Donate</button></a>
+			<a class="donate-button" href="<?php echo get_site_url() ?>/donate">Donate</a>
 		</footer>
 
 	<?php wp_footer(); ?> 

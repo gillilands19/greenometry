@@ -43,7 +43,7 @@ get_header();
 				</figure>
 				<h3 class="posts-container__post-title"><?php the_title(); ?></h3>
 				<p class="posts-container__post-excerpt"><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>"><button class="posts-container__more-link">Read More</button></a>
+				<a href="<?php the_permalink(); ?>" class="resource-button">Read More</a>
 			</div>
 		<?php endwhile; endif; ?>
 		</section>
@@ -63,7 +63,7 @@ get_header();
 					<?php the_post_thumbnail(); ?>
 				</figure>
 				<h3 class="posts-container__post-title"><?php the_title(); ?></h3>
-				<a href="<?php the_permalink(); ?>"><button class="posts-container__more-link">Watch</button></a>
+				<a href="<?php the_permalink(); ?>" class="resource-button">Watch</a>
 			</div>
 
 		<?php endwhile; endif; ?>
