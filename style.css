@@ -217,8 +217,8 @@ div.support-container__item-container3 {
 
 img#donate {
     display: inline-block;
-    width: 165px;
-    height: auto;
+    width: auto;
+    height: 165px;
     text-align: center;
 }
 
