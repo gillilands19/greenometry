@@ -14,7 +14,6 @@ get_header();
 ?>
 
 		<section class="posts_container">
-		taxonomy.php
 			<h1 class="posts-container__heading"><?php single_term_title(); ?></h1>
 		<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
