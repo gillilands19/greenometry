@@ -20,7 +20,7 @@
             <div id="support-container__options">
 				<div class="support-container__item-container1">
 					<figure class="support-container__icon">
-					<img id="donate" src="<?php the_field( 'donate_icon' ); ?>" alt="donate">
+					<img id="donate" src="<?php the_sub_field( 'donate_icon' ); ?>" alt="donate">
 					</figure>
 					<h3 class="support-container__item-heading">Donate</h3>
 					<p class="support-container__item-subtitle">Our projects and research <br> greatly appreciate your financial support.</p>
@@ -28,7 +28,7 @@
 	            
 				<div class="support-container__item-container2">
 					<figure class="support-container__icon">
-					<img id="donate" src="<?php the_field( 'share_icon' ); ?>" alt="donate">
+					<img id="donate" src="<?php the_sub_field( 'share_icon' ); ?>" alt="donate">
 					</figure>
 					<h3 class="support-container__item-heading">Share</h3>
 					<p class="support-container__item-subtitle">Help us spread the word and<br> share our page.</p>
