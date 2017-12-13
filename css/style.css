@@ -399,6 +399,13 @@ aside.category-sidebar {
 .recent-posts__qa-text-container {
   padding: 20px; }
 
+.recent-posts__qa-category {
+  color: #FFB63C;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  font-weight: 600; }
+
 .recent-posts__qa-title {
   font-size: 1.5em;
   color: #01693A;
@@ -408,9 +415,14 @@ aside.category-sidebar {
   margin-top: 0;
   margin-bottom: 5px; }
 
+.recent-posts__qa-answer {
+  margin-bottom: 30px; }
+
 .recent-posts__qa-date {
   text-transform: uppercase;
-  color: #ccc; }
+  color: #ccc;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 0.7em; }
 
 .category-sidebar {
   margin-left: 20px; }
