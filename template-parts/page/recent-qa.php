@@ -57,7 +57,7 @@
 				</figure>
 
 				<div class="recent-posts__qa-text-container">
-					<h4 class="recent-posts__qa-category"><?php the_category( ', ' ); ?></h4>
+					<h4 class="recent-posts__qa-category">Transportation<?php the_category( ', ' ); ?></h4>
 					<h2 class="recent-posts__qa-title">
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h2>
