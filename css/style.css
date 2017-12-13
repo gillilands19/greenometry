@@ -121,6 +121,13 @@ a {
   background-color: #6096C2;
   clear: both; }
 
+h4.subscribe-front__heading {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 20px; }
+
 #wpcf7-f92-p33-o1 > form {
   display: flex;
   justify-content: center; }
