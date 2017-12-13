@@ -20,7 +20,7 @@
             <div id="support-container__options">
 				<div class="support-container__item-container1">
 					<figure class="support-container__icon">
-					<img id="donate" src="<?php the_sub_field( 'donate_icon' ); ?>" alt="donate">
+					<img id="donate" src="<?php the_field( 'image' ); ?>" alt="donate">
 					</figure>
 					<h3 class="support-container__item-heading">Donate</h3>
 					<p class="support-container__item-subtitle">Our projects and research <br> greatly appreciate your financial support.</p>
