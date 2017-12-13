@@ -522,4 +522,8 @@ span.wpcf7-list-item.first.last {
   font-family: "Helvetica", Arial, sans-serif;
   color: #fff; }
 
+#give-purchase-button {
+  box-shadow: 1px 2px 5px #ccc;
+  border-color: #ffc86d; }
+
 /*# sourceMappingURL=style.css.map */
