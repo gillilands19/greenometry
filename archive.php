@@ -30,7 +30,7 @@ get_header();
 				</figure>
 				<h3 class="posts-container__post-title"><?php the_title(); ?></h3>
 				<p class="posts-container__post-excerpt"><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>"><button class="posts-container__more-link">View</button></a>
+				<a href="<?php the_permalink(); ?>" class="resource-button">View</button></a>
 			</div>
 
 		<?php endwhile; ?>
